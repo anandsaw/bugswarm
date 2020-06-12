@@ -72,4 +72,4 @@ class TravisWrapper(object):
         return self._get(TravisWrapper._endpoint('builds/{}'.format(build_id)))
 
     def get_job_info(self, job_id):
-        return self._get(TravisWrapper._endpoint('jobs/{}'.format(job_id)))
+        return self._get(TravisWrapper._endpoint('job/{}'.format(job_id)))

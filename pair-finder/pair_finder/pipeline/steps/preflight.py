@@ -10,10 +10,11 @@ from ...utils import Utils
 
 class Preflight(Step):
     def process(self, data: Any, context: dict) -> Optional[Any]:
+        print("here")
         repo = context['repo']
         utils = context['utils']
         log.info('Repository:', repo)
-
+        print(context)
         # Skip the repo if it appears to be private or deleted.
         if utils.repo_is_private_or_removed(repo):
             Utils.write_empty_json(repo, context['task_name'])
@@ -26,7 +27,7 @@ class Preflight(Step):
             msg = 'Cloning failed for {}. Skipping.'.format(repo)
             log.error(msg)
             raise StepException(msg)
-
+        print("whatelse")
         is_mined, repo_in_db = Utils.is_repo_previously_mined(repo)
         if is_mined:
             # Set the current mining repo to be what our DB contains

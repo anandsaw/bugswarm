@@ -45,7 +45,6 @@ def filter_non_exact_images(pairs: List) -> Tuple[int, int, int, int]:
     4. The number of pairs filtered due to usage of a non-exact Docker image.
     """
     log.debug('To detect non-exact pairs, we first extract the used images from the original logs.')
-
     travis_images = read_json(TRAVIS_IMAGES_JSON)
     provisioned_strs = []
     for language in travis_images:

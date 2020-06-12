@@ -7,13 +7,13 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 source "${SCRIPT_DIR}"/common.sh
 
 # One step each for PairFinder and PairFilter.
-TOTAL_STEPS=3
+TOTAL_STEPS=4
 STAGE='Mine Project'
 
 USAGE='Usage: bash run_mine_project.sh (-r <repo-slug> | -f <repo-slug-file>) [-t <threads>] [-c <component-directory>]'
 
 # Extract command line arguments.
-OPTS=$(getopt -o c:r:f:t: --long component-directory:,repo:,repo-file:,threads: -n 'run-mine-project' -- "$@")
+OPTS=$(getopt -o c:r:f:t:b --long component-directory:,repo:,repo-file:,threads:,branch: -n 'run-mine-project' -- "$@")
 while true; do
     case "$1" in
       # Shift twice for options that take an argument.
@@ -21,6 +21,7 @@ while true; do
       -r | --repo                ) repo="$2";                shift; shift ;;
       -f | --repo-file           ) repo_file="$2";           shift; shift ;;
       -t | --threads             ) threads="$2";             shift; shift ;;
+      -b | --branch             ) branch="$2";             shift; shift ;;
       -- ) shift; break ;;
       *  ) break ;;
     esac
@@ -51,8 +52,13 @@ if [[ -z "${threads}" ]]; then
     threads=1
 fi
 
+if [[ -z "${branch}" ]]; then
+    echo 'Branch not specified. Defaulting to master.'
+    branch="master"
+fi
+
 if [[ -z "${component_directory}" ]]; then
-    component_directory="/home/$(whoami)/bugswarm"
+    component_directory="/Users/$(whoami)/Documents/bugswarm"
 fi
 
 if ${repo_flag} && [[ ${repo} != ?*"/"?* ]]; then
@@ -72,6 +78,7 @@ fi
 
 json_name=${task_name}.json
 pair_finder_dir="${component_directory}"/pair-finder
+pair_culler_dir="${component_directory}"/pair-culler
 pair_filter_dir="${component_directory}"/pair-filter
 pair_classifier_dir="${component_directory}"/pair-classifier
 
@@ -82,15 +89,23 @@ check_repo_exists ${pair_classifier_dir} 'pair-classifier'
 
 # PairFinder
 print_step "${STAGE}" ${TOTAL_STEPS} 'PairFinder'
-cd ${pair_finder_dir}
+#cd ${pair_finder_dir}
+#
+#if ${repo_flag}; then
+#    python3 pair_finder.py --keep-clone --repo ${repo} --threads ${threads}
+#else
+#    python3 pair_finder.py --keep-clone --repo-file ${file_path} --threads ${threads}
+#fi
+#
+#exit_if_failed 'PairFinder encountered an error.'
 
-if ${repo_flag}; then
-    python3 pair_finder.py --keep-clone --repo ${repo} --threads ${threads}
-else
-    python3 pair_finder.py --keep-clone --repo-file ${file_path} --threads ${threads}
-fi
+# PairCuller
+print_step "${STAGE}" ${TOTAL_STEPS} 'PairCuller'
+echo ${pair_culler_dir}
+cd ${pair_culler_dir}
+python3 pair_culler.py --pair-finder-path ${pair_finder_dir} --repo ${repo} --branch ${branch}
 
-exit_if_failed 'PairFinder encountered an error.'
+exit_if_failed 'PairCuller encountered an error.'
 
 # PairFilter
 print_step "${STAGE}" ${TOTAL_STEPS} 'PairFilter'

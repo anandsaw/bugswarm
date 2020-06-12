@@ -40,7 +40,7 @@ def download_log(job_id: Union[str, int],
         raise FileExistsError
 
     job_id = str(job_id)
-    travis_log_link = 'https://api.travis-ci.org/jobs/{}/log.txt'.format(job_id)
+    travis_log_link = 'https://api.travis-ci.org/v3/job/{}/log.txt'.format(job_id)
     content = _get_log_from_url(travis_log_link, retries)
 
     if not content:

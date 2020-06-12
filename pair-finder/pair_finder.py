@@ -88,7 +88,6 @@ def main(argv=None):
 
     Utils.create_dirs(task_name)
     Utils.clean_bad_json_files(task_name)
-
     num_workers = min(len(repo_list), num_threads)
     log.info('Initializing', num_workers, 'worker threads.')
     with ThreadPoolExecutor(max_workers=num_workers) as executor:

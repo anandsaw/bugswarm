@@ -37,6 +37,7 @@ def main(argv=None):
     for opt, arg in optlist:
         if opt in ['-i', '--input-file']:
             input_file = arg
+            print(input_file)
         if opt in ['-t', '--threads']:
             threads = int(arg)
         if opt in ['-o', '--task-name']:

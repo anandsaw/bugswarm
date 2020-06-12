@@ -7,7 +7,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 source "${SCRIPT_DIR}"/common.sh
 
 # Increase REPRODUCER_RUNS to be more confident about pair stability at the cost of throughput.
-REPRODUCER_RUNS=5
+REPRODUCER_RUNS=1
 # Steps for Reproducer runs plus one step each for PairChooser, ReproducedResultsAnalyzer, ImagePackager, and
 # MetadataPackager.
 TOTAL_STEPS=$((${REPRODUCER_RUNS} + 4))
@@ -42,7 +42,7 @@ if [[ -z "${threads}" ]]; then
 fi
 
 if [[ -z "${component_directory}" ]]; then
-    component_directory="/home/$(whoami)/bugswarm"
+    component_directory="/Users/$(whoami)/Documents/bugswarm"
 fi
 
 if [[ ${repo} != *"/"* ]]; then
@@ -64,7 +64,7 @@ check_repo_exists ${reproducer_dir} 'reproducer'
 cd ${reproducer_dir}
 print_step "${STAGE}" ${TOTAL_STEPS} "PairChooser"
 pair_file_path=${reproducer_dir}/input/json/${task_name}.json
-python3 pair_chooser.py -o ${pair_file_path} -r ${repo}
+#python3 pair_chooser.py -o ${pair_file_path} -r ${repo}
 exit_if_failed 'PairChooser encountered an error.'
 
 # Reproducer
