@@ -38,8 +38,8 @@ def _write_dockerfile(destination: str, base_image: str, job_id: str):
         'RUN sudo apt-get update && sudo apt-get install --only-upgrade openssl libssl-dev',
 
         # Add the repository.
-        'ADD info.txt /home/travis/build/',
-        'RUN chmod 777 -R /home/travis/build',
+        # 'ADD info.txt /home/travis/build/',
+        # 'RUN chmod 777 -R /home/travis/build',
 
         # Add the build script.
         'ADD {} /usr/local/bin/run.sh'.format(job_id + '.sh'),
