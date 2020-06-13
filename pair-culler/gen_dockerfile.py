@@ -38,8 +38,8 @@ def _write_dockerfile(destination: str, base_image: str, job_id: str):
         'RUN sudo apt-get update && sudo apt-get install --only-upgrade openssl libssl-dev',
 
         # Add the repository.
-        # 'ADD info.txt /home/travis/build/',
-        # 'RUN chmod 777 -R /home/travis/build',
+        'ADD info.txt /home/travis/build/',
+        'RUN chmod 777 -R /home/travis/build',
 
         # Add the build script.
         'ADD {} /usr/local/bin/run.sh'.format(job_id + '.sh'),
@@ -52,6 +52,7 @@ def _write_dockerfile(destination: str, base_image: str, job_id: str):
 
         # Set the user to use when running the image. Our Google Drive contains a file that explains why we do this.
         'USER travis',
+        'RUN chown -R travis:travis /home/travis/build/',
 
         # Run the build script.
         'CMD ["usr/local/bin/run.sh"]',
