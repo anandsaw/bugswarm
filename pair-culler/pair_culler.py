@@ -20,7 +20,7 @@ def main():
     # at this point we have the latest ID:
     if latest_id == 0:
         exit(1)
-
+    print(latest_id)
     final_job_pair = None
     with open(os.path.join(pair_finder_path, "output", repo, repo + ".json"), "r") as f:
         job_pair_list = json.load(f)
@@ -30,6 +30,7 @@ def main():
                 final_job_pair = job_pair
                 break
 
+    print(final_job_pair)
     if len(final_job_pair['jobpairs']) == 0:
         final_job_pair['jobpairs'] = [{"failed_job": {"job_id": final_job_pair['failed_build']['build_id']},"passed_job": {"job_id": latest_id},"build_system": "NA"}]
 

@@ -1,9 +1,9 @@
 import sys
 
 # DockerHub
-DOCKER_HUB_REPO = 'annadsaw/cbuilds'
-DOCKER_HUB_USERNAME = 'annadsaw'
-DOCKER_HUB_PASSWORD = '@KA03p5209'
+DOCKER_HUB_REPO = 'binswarm/cbuilds'
+DOCKER_HUB_USERNAME = 'binswarm'
+DOCKER_HUB_PASSWORD = 'BinSwarmDavis'
 if not DOCKER_HUB_REPO:
     print('[ERROR]: DOCKER_HUB_REPO has not been found. Please input your credentials under '
           'common/credentials.py and rerun the bugswarm/provision.sh script.')
@@ -31,7 +31,7 @@ if not DOCKER_REGISTRY_PASSWORD:
 # GitHub
 # These GitHub tokens are hard-coded and can be used for token switching to minimize the time spent waiting for our
 # GitHub quota to reset.
-GITHUB_TOKENS = ["c7c79b12967ab0f52884197adc0b7cef360accbc"]
+GITHUB_TOKENS = [""]
 if not GITHUB_TOKENS:
     print('[ERROR]: GITHUB_TOKENS has not been set. Please input your credentials under common/credentials.py and '
           'rerun the bugswarm/provision.sh script.')
@@ -45,3 +45,5 @@ if not DATABASE_PIPELINE_TOKEN:
     sys.exit(1)
 
 COMMON_HOSTNAME = '127.0.0.1:5000'
+
+TRAVIS_TOKEN = 'fIolBw6Lq31M5Z2slyE6bQ'
