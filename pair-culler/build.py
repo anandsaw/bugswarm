@@ -1,9 +1,4 @@
-from dataclasses import dataclass
-from typing import List
-from typing import Any
-
-
-@dataclass
 class Build:
-    build_id: int
-    job_list: List[Any]
+    def __init__(self, build_id, job_list):
+        self.build_id = build_id
+        self.job_list = job_list
