@@ -20,6 +20,7 @@ def main():
     argv = sys.argv
     repo = argv[2]
     repo_path = argv[4]
+    branch = argv[6]
 
     #create paths and setup dirs
     gen_files_path = os.path.join(BASE_DIR, "files", repo)
@@ -30,7 +31,7 @@ def main():
     get_jobs_from_travis = GetJobsFromTravisAPI()
     get_jobs_from_travis.process(repo, os.path.join(travis_api_path, "builds.json"), os.path.join(travis_api_path, "builds_info.json"))
     print("Done downloading Travis builds and build infos")
-    latest_build_id = get_latest_build_id(travis_api_path)
+    latest_build_id = get_latest_build_id(travis_api_path, branch)
     latest_build = get_latest_build(travis_api_path, latest_build_id)
     print("Selected latest passing build: " + str(latest_build_id))
     build = get_build(latest_build_id, latest_build)
@@ -54,6 +55,7 @@ def setup_dirs_for_project(gen_files_path, travis_api_path, log_path):
         os.makedirs(travis_api_path)
     if not os.path.exists(log_path):
         os.makedirs(log_path)
+
 
 def select_job(jobs):
     for job in jobs:
@@ -111,13 +113,13 @@ def filter_jobs(jobs):
         return filtered_jobs
 
 
-def get_latest_build_id(travis_api_path):
+def get_latest_build_id(travis_api_path, branch):
     latest_build_id = None
     with open(os.path.join(travis_api_path, "builds.json")) as f:
         build_list = json.load(f)
         for build in build_list:
             latest_build_id = build['id']
-            if build['state'] == "finished" and build['result'] == 0 and build['branch'] == "master":
+            if build['state'] == "finished" and build['result'] == 0 and build['branch'] == branch:
                 break
     return latest_build_id
 
