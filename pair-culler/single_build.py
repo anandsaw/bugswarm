@@ -149,11 +149,11 @@ def filter_non_exact_images(job_id, log_path):
     4. The number of pairs filtered due to usage of a non-exact Docker image.
     """
     log.debug('To detect non-exact pairs, we first extract the used images from the original logs.')
-    travis_images = read_json(TRAVIS_IMAGES_JSON)
+    travis_images = read_json(os.path.join(BASE_DIR, "travis_images.json"))
     provisioned_strs = []
     for language in travis_images:
         provisioned_strs += travis_images[language].values()
-    dockerhub_images = read_json(DOCKERHUB_IMAGES_JSON)
+    dockerhub_images = read_json(os.path.join(BASE_DIR, "dockerhub_images.json"))
     no_original_log = 0
     error_reading_original_log = 0
     orig_log_path = os.path.join(log_path, str(job_id) + ".txt")
