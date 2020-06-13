@@ -14,7 +14,7 @@ from gen_files_for_job import gen_files_for_job
 from build import Build
 from docker_wrapper import DockerWrapper
 
-BASE_DIR = "/Users/anandsaw/Documents/bugswarm/pair-culler"
+BASE_DIR = "/home/anandsaw/bugswarm/pair-culler"
 
 def main():
     argv = sys.argv
