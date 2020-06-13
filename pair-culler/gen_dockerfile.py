@@ -52,7 +52,7 @@ def _write_dockerfile(destination: str, base_image: str, job_id: str):
 
         # Set the user to use when running the image. Our Google Drive contains a file that explains why we do this.
         'USER travis',
-        'RUN chown -R travis:travis /home/travis/build/',
+        'RUN sudo chown -R travis:travis /home/travis/build/',
 
         # Run the build script.
         'CMD ["usr/local/bin/run.sh"]',
