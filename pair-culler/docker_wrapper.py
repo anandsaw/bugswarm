@@ -32,7 +32,7 @@ class DockerWrapper(object):
         log.info('Building and running job with ID {}.'.format(job_id))
         dockerfile_path = os.path.join(gen_files_dir, job_id + "-dockerfile")
         # Determine the image name.
-        image_name = '{}'.format(job_id + "-" + repo_name)
+        image_name = 'binswarm/cbuilds:{}'.format(job_id + "-" + repo_name)
 
         # Actually build the image now.
         image = self.build_image(path=gen_files_dir, dockerfile=dockerfile_path, full_image_name=image_name)
