@@ -114,6 +114,7 @@ class DockerWrapper(object):
     def spawn_container(self, image, container_name, reproduced_log_destination, repo_path):
         container_runtime = 0
         try:
+            print("Image name: " +  str(image))
             container = self.client.containers.run(image, detach=True, cpu_count=2, mem_limit='4g',
                                                    tty=True, volumes={repo_path: {'bind': '/home/travis/build', 'mode': 'rw'}})  # privileged=True
         except docker.errors.ImageNotFound:
