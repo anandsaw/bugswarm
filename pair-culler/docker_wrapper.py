@@ -115,7 +115,7 @@ class DockerWrapper(object):
         container_runtime = 0
         try:
             container = self.client.containers.run(image, detach=True, cpu_count=2, mem_limit='4g',
-                                                   tty=True, user="travis", volumes={repo_path: {'bind': '/home/travis/build', 'mode': 'rw'}})  # privileged=True
+                                                   tty=True, volumes={repo_path: {'bind': '/home/travis/build', 'mode': 'rw'}})  # privileged=True
         except docker.errors.ImageNotFound:
             log.error('Docker image not found.')
             return 1
