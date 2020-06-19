@@ -43,7 +43,7 @@ class DockerWrapper(object):
         while True:
             try:
                 reproduced_log_destination = os.path.join(gen_files_dir, "docker-log.txt")
-                self.spawn_container(image, container_name, reproduced_log_destination, repo_path)
+                self.spawn_container(image_name, container_name, reproduced_log_destination, repo_path)
             except requests.exceptions.ReadTimeout as e:
                 log.error('Error while attempting to spawn a container:', e)
                 log.info('Retrying to spawn container.')
