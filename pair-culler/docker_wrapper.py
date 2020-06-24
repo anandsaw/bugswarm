@@ -28,13 +28,12 @@ class DockerWrapper(object):
             'password': DOCKER_HUB_PASSWORD,
         }
 
-    def build_and_run(self, job_id, gen_files_dir, repo_path, repo_name):
+    def build_and_run(self, job_id, gen_files_dir, repo_path, repo_name, base_image_name, repo):
         log.info('Building and running job with ID {}.'.format(job_id))
         dockerfile_path = os.path.join(gen_files_dir, job_id + "-dockerfile")
         # Determine the image name.
         image_name = 'binswarm/cbuilds:{}'.format(job_id + "-" + repo_name)
         image_name = image_name.lower()
-        print(image_name)
 
         # Actually build the image now.
         image = self.build_image(path=gen_files_dir, dockerfile=dockerfile_path, full_image_name=image_name)
@@ -45,7 +44,7 @@ class DockerWrapper(object):
         while True:
             try:
                 reproduced_log_destination = os.path.join(gen_files_dir, "docker-log.txt")
-                self.spawn_container(image_name, container_name, reproduced_log_destination, repo_path)
+                self.spawn_container(image_name, container_name, reproduced_log_destination, repo_path, base_image_name, repo)
             except requests.exceptions.ReadTimeout as e:
                 log.error('Error while attempting to spawn a container:', e)
                 log.info('Retrying to spawn container.')
@@ -113,11 +112,15 @@ class DockerWrapper(object):
         except KeyboardInterrupt:
             log.error('Caught a KeyboardInterrupt while pushing a Docker image to Docker Registry.')
 
-    def spawn_container(self, image, container_name, reproduced_log_destination, repo_path):
+    def spawn_container(self, image, container_name, reproduced_log_destination, repo_path, base_image_name, repo):
         container_runtime = 0
         try:
             print("Image name: " +  str(image))
-            container = self.client.containers.run(image, detach=True, cpu_count=2, mem_limit='4g',
+            if 'ubuntu-1804' in base_image_name:
+                container = self.client.containers.run(image, detach=True, cpu_count=2, mem_limit='4g',
+                                                   tty=True, volumes={repo_path: {'bind': '/home/travis/build/' + repo, 'mode': 'rw'}})  # privileged=True
+            else:
+                container = self.client.containers.run(image, detach=True, cpu_count=2, mem_limit='4g',
                                                    tty=True, volumes={repo_path: {'bind': '/home/travis/build', 'mode': 'rw'}})  # privileged=True
         except docker.errors.ImageNotFound:
             log.error('Docker image not found.')
