@@ -36,7 +36,9 @@ class DockerWrapper(object):
 
         # Actually build the image now.
         image = self.build_image(path=gen_files_dir, dockerfile=dockerfile_path, full_image_name=image_name)
-
+        f=open("image.txt","w")
+        f.write(image_name)
+        f.close()
         # Spawn the container.
         container_name = job_id
         retry_count = 0
