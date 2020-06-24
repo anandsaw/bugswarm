@@ -85,15 +85,15 @@ def reproduce_job(job, repo, gen_files_path, repo_path):
     """
 
     # repo_path = os.path.join("/Users/anandsaw/Documents/bugswarm/pair-culler/repos/", repo)
-    repo = repo.replace("/", "-")
+    repo_name = repo.replace("/", "-")
     print("Starting actual reproduction")
-    gen_files_for_job(job, repo_path, gen_files_path, repo)
+    gen_files_for_job(job, repo_path, gen_files_path, repo_name)
     print("Done generating files for docker container building")
     docker = DockerWrapper()
     print("Starting to build and run docker container")
-    docker.build_and_run(str(job['id']), gen_files_path, repo_path, repo)
+    docker.build_and_run(str(job['id']), gen_files_path, repo_path, repo_name, job['heuristic_image'], repo)
     print("Done running the container.")
-    docker.push_image(str(job['id']) + "-" + repo)
+    docker.push_image(str(job['id']) + "-" + repo_name)
     print("Done pushing image to dockerhub")
 
 
@@ -104,19 +104,29 @@ def get_build(latest_build_id, latest_build):
         jobs.append(job)
     filtered_jobs = filter_jobs(jobs)
     if len(filtered_jobs) == 0:
-        exit(1)
+        print("We have no jobs after filtering")
+        exit(0)
     return Build(latest_build_id, filtered_jobs)
 
 
 def filter_jobs(jobs):
-    if len(jobs) == 1:
-        return jobs
-    else:
-        filtered_jobs = []
-        for job in jobs:
-            if job['config']['os'] == "linux" and job['result'] == 0:
-                filtered_jobs.append(job)
-        return filtered_jobs
+    filtered_jobs = []
+    for job in jobs:
+        include_job = True
+        if job['config']['os'] != 'linux' or job['result'] != 0:
+            include_job = False
+        if 'services' in job['config']:
+            services = job['config']['services']
+            for service in services:
+                if service == 'docker':
+                    include_job = False
+        if 'compiler' in job['config']:
+            compiler = job['config']['compiler']
+            if 'gcc' not in compiler and 'clang' not in compiler:
+                include_job = False
+        if include_job is True:
+            filtered_jobs.append(job)
+    return filtered_jobs
 
 
 def get_latest_build_id(travis_api_path, branch):
