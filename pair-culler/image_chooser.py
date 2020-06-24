@@ -124,22 +124,29 @@ class ExactImageChooserByCommitSHA(BaseImageChooser):
         worker_lines = get_fold_lines(self.original_log_path,
                                       'travis_fold:start:worker_info',
                                       'travis_fold:end:worker_info')
+
         if worker_lines is None:
             return None
         instance = get_instance_line(worker_lines)
+
         if instance is None:
             return None
-
         # Matches 'travis-ci-garnet-trusty-1512502259-986baf0' and 'travis-ci-sardonyx-xenial-1553530528-f909ac5'
         # Does not match 'travis-ci-garnet-trusty-1503972833'
-        match_obj_tag = re.search(r'(travis-ci(-[a-z]+)+-[0-9]+-[0-9a-z]+)', instance)
+        if "travis-ci-ubuntu-1804" in instance:
+            match_obj_tag = re.search(r'(travis-ci(-[a-z]+)+-[0-9]+-[0-9]+-[0-9a-z]+)', instance)
+        else:
+            match_obj_tag = re.search(r'(travis-ci(-[a-z]+)+-[0-9]+-[0-9a-z]+)', instance)
         if not match_obj_tag:
             return None
 
         match_list = []
         instance_tag = match_obj_tag.group(1)
         instance_tag = instance_tag.split('-')
-        repo_name = 'travisci/' + '-'.join(instance_tag[1:3])
+        if instance_tag[2] == 'ubuntu':
+            repo_name = 'travisci/' + '-'.join(instance_tag[1:4])
+        else:
+            repo_name = 'travisci/' + '-'.join(instance_tag[1:3])
         commit_sha = instance_tag[-1]
         pattern = 'packer-[0-9]+-{}'.format(commit_sha)
         images = self.dockerhub_images.get(repo_name, '')
