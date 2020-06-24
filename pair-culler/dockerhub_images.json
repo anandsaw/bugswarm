@@ -316,6 +316,37 @@
     "packer-1558623664-f909ac5",
     "packer-1564753982-0c06deb6",
     "packer-1576238197-60d50014"
+  ],
+  "travisci/ci-ubuntu-1804": [
+    "packer-1592916875-4d46c6b3",
+    "packer-minimal-1592916822-4d46c6b3",
+    "packer-1592312047-89e91f37",
+    "packer-minimal-1592311945-89e91f37",
+    "packer-1591707253-89e91f37",
+    "packer-minimal-1591707173-89e91f37",
+    "packer-1591103239-89e91f37",
+    "packer-minimal-1591102338-89e91f37",
+    "packer-1590745945-dd23393f",
+    "packer-1590742536-dd23393f",
+    "packer-1590683650-c6054a9a",
+    "packer-minimal-1590576019-426d1254",
+    "packer-1582574251-a9b1ae58",
+    "packer-1582560491-a9b1ae58",
+    "packer-1582528468-bc2b38f3",
+    "packer-1577347966-74db3f91",
+    "packer-1576608441-e21f23cf",
+    "packer-1576608481-e21f23cf",
+    "packer-1566551110-e45a2919",
+    "packer-1566169916-b915bf16",
+    "packer-1566137194-761b0051",
+    "packer-1565538440-761b0051",
+    "packer-1565524567-a7bd9b1b",
+    "packer-1565483496-dc8932c6",
+    "packer-1565396244-d85043a4",
+    "packer-1560840999-dcc1c568",
+    "packer-minimal-1560236965-b605d4ff",
+    "packer-minimal-1560157536-c3333383",
+    "packer-minimal-1559809820-28ae8125"
   ]
 }
 

@@ -35,10 +35,17 @@ def main():
     latest_build = get_latest_build(travis_api_path, latest_build_id)
     print("Selected latest passing build: " + str(latest_build_id))
     build = get_build(latest_build_id, latest_build)
+    job_list = []
     for job in build.job_list:
-        job['heuristic_image'] = filter_non_exact_images(job['id'], log_path)
+        image = filter_non_exact_images(job['id'], log_path)
+        if image is not None:
+            job['heuristic_image'] = image
+            job_list.append(job)
 
-    selected_job = select_job(build.job_list)
+    if len(job_list) == 0:
+        print("We have no images for the jobs")
+        exit(0)
+    selected_job = select_job(job_list)
     print("Selected job from build: " + str(selected_job['id']) + " " + str(selected_job['number']))
     # at this point we have a build and its jobs with the image parsed
     # now we need to reproduce the job
@@ -58,9 +65,9 @@ def setup_dirs_for_project(gen_files_path, travis_api_path, log_path):
 
 
 def select_job(jobs):
-    for job in jobs:
-        if job['config']['compiler'] == "gcc":
-            return job
+    # for job in jobs:
+    #     if job['heuristic_image'] is not None:
+    #         return job
     # if we are here means we found no gcc return just the first job
     return jobs[0]
 
@@ -90,9 +97,7 @@ def reproduce_job(job, repo, gen_files_path, repo_path):
     print("Done pushing image to dockerhub")
 
 
-
 def get_build(latest_build_id, latest_build):
-
     build_matrix = latest_build['build_info']['matrix']
     jobs = []
     for job in build_matrix:
@@ -101,6 +106,7 @@ def get_build(latest_build_id, latest_build):
     if len(filtered_jobs) == 0:
         exit(1)
     return Build(latest_build_id, filtered_jobs)
+
 
 def filter_jobs(jobs):
     if len(jobs) == 1:
