@@ -74,7 +74,9 @@ def process_make_file(project_name):
     for root,dirs,files in os.walk(project_path):
         for file in files:
             if "make" in file.lower():
-                makefiles.append(os.path.join(root, file))
+                make_path = os.path.join(root, file)
+                if not os.path.islink(make_path):
+                    makefiles.append(make_path)
     optmization_operators = process_make_files(makefiles)
     if len(optmization_operators) > 0:
         return select_highest_opt_level(optmization_operators)
