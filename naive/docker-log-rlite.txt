@@ -1,0 +1,1809 @@
+travis_time:start:0b56e054[0Ktravis_time:end:0b56e054:start=1594808551691678022,finish=1594808552085502941,duration=393824919,event=no_world_writable_dirs[0Ktravis_time:start:038c108d[0Ktravis_time:end:038c108d:start=1594808552093793249,finish=1594808552099878171,duration=6084922,event=check_unsupported[0Ktravis_time:start:015a8f2f[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: cpp
+Build dist: xenial
+Build id: ''
+Job id: ''
+Runtime kernel version: 4.4.0-112-generic
+[34m[1mBuild image provisioning date and time[0m
+Thu May 23 15:30:39 UTC 2019
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 16.04.6 LTS
+Release:	16.04
+Codename:	xenial
+[34m[1mSystemd Version[0m
+systemd 229
+[34m[1mCookbooks Version[0m
+5dab6d6 https://github.com/travis-ci/travis-cookbooks/tree/5dab6d6
+[34m[1mgit version[0m
+git version 2.21.0
+[34m[1mbash version[0m
+GNU bash, version 4.3.48(1)-release (x86_64-pc-linux-gnu)
+[34m[1mgcc version[0m
+gcc (Ubuntu 5.4.0-6ubuntu1~16.04.11) 5.4.0 20160609
+[34m[1mdocker version[0m
+Client:
+ Version:           18.06.1-ce
+ API version:       1.38
+ Go version:        go1.10.3
+ Git commit:        e68fc7a
+ Built:             Tue Aug 21 17:20:43 2018
+ OS/Arch:           linux/amd64
+ Experimental:      false
+[34m[1mclang version[0m
+clang version 7.0.0 (tags/RELEASE_700/final)
+[34m[1mjq version[0m
+jq-1.5
+[34m[1mbats version[0m
+Bats 0.4.0
+[34m[1mshellcheck version[0m
+0.6.0
+[34m[1mshfmt version[0m
+v2.6.3
+[34m[1mccache version[0m
+3.2.4
+[34m[1mcmake version[0m
+cmake version 3.12.4
+[34m[1mheroku version[0m
+heroku/7.24.4 linux-x64 node-v11.14.0
+[34m[1mimagemagick version[0m
+Version: ImageMagick 6.8.9-9 Q16 x86_64 2018-09-28 http://www.imagemagick.org
+[34m[1mmd5deep version[0m
+4.4
+[34m[1mmercurial version[0m
+version 4.8
+[34m[1mmysql version[0m
+mysql  Ver 14.14 Distrib 5.7.26, for Linux (x86_64) using  EditLine wrapper
+[34m[1mopenssl version[0m
+OpenSSL 1.0.2g  1 Mar 2016
+[34m[1mpacker version[0m
+1.3.3
+[34m[1mpostgresql client version[0m
+psql (PostgreSQL) 10.8 (Ubuntu 10.8-1.pgdg16.04+1)
+[34m[1mragel version[0m
+Ragel State Machine Compiler version 6.8 Feb 2013
+[34m[1msudo version[0m
+1.8.16
+[34m[1mgzip version[0m
+gzip 1.6
+[34m[1mzip version[0m
+Zip 3.0
+[34m[1mvim version[0m
+VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Nov 24 2016 16:44:48)
+[34m[1miptables version[0m
+iptables v1.6.0
+[34m[1mcurl version[0m
+curl 7.47.0 (x86_64-pc-linux-gnu) libcurl/7.47.0 GnuTLS/3.4.10 zlib/1.2.8 libidn/1.32 librtmp/2.3
+[34m[1mwget version[0m
+GNU Wget 1.17.1 built on linux-gnu.
+[34m[1mrsync version[0m
+rsync  version 3.1.1  protocol version 31
+[34m[1mgimme version[0m
+v1.5.3
+[34m[1mnvm version[0m
+0.34.0
+[34m[1mperlbrew version[0m
+/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.86
+[34m[1mphpenv version[0m
+rbenv 1.1.2-2-g4e92322
+[34m[1mrvm version[0m
+rvm 1.29.8 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+[34m[1mdefault ruby version[0m
+ruby 2.5.3p105 (2018-10-18 revision 65156) [x86_64-linux]
+[34m[1mCouchDB version[0m
+couchdb 1.6.1
+[34m[1mElasticSearch version[0m
+5.5.0
+[34m[1mInstalled Firefox version[0m
+firefox 63.0.1
+[34m[1mMongoDB version[0m
+MongoDB 4.0.9
+[34m[1mPhantomJS version[0m
+2.1.1
+[34m[1mPre-installed PostgreSQL versions[0m
+9.4.22
+9.5.17
+9.6.13
+[34m[1mRedis version[0m
+redis-server 5.0.5
+[34m[1mPre-installed Go versions[0m
+1.11.1
+[34m[1mmvn version[0m
+Apache Maven 3.6.0 (97c98ec64a1fdfee7767ce5ffb20918da4f719f3; 2018-10-24T18:41:47Z)
+[34m[1mgradle version[0m
+Gradle 5.1.1!
+[34m[1mlein version[0m
+Leiningen 2.9.1 on Java 11.0.2 OpenJDK 64-Bit Server VM
+[34m[1mPre-installed Node.js versions[0m
+v10.15.3
+v11.0.0
+v4.9.1
+v6.17.1
+v8.12.0
+v8.16.0
+v8.9
+[34m[1mphpenv versions[0m
+  system
+  5.6
+  5.6.40
+  7.1
+  7.1.27
+  7.2
+* 7.2.15 (set by /home/travis/.phpenv/version)
+  hhvm
+  hhvm-stable
+[34m[1mcomposer --version[0m
+Composer version 1.8.4 2019-02-11 10:52:10
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.3.8
+ruby-2.4.5
+ruby-2.5.3
+travis_fold:end:system_info[0K
+travis_time:end:015a8f2f:start=1594808552107663997,finish=1594808552118823003,duration=11159006,event=show_system_info[0Ktravis_time:start:05e56ddd[0Ktravis_time:end:05e56ddd:start=1594808552126769655,finish=1594808552151742749,duration=24973094,event=rm_riak_source[0Ktravis_time:start:03638424[0Ktravis_time:end:03638424:start=1594808552159345787,finish=1594808552173370092,duration=14024305,event=fix_rwky_redis[0Ktravis_time:start:349740f0[0K[31;1mTimeout waiting for network availability.[0m
+travis_time:end:349740f0:start=1594808552181902980,finish=1594808572952173431,duration=20770270451,event=wait_for_network[0Ktravis_time:start:00f837ec[0Ktravis_time:end:00f837ec:start=1594808572959881299,finish=1594808573366313739,duration=406432440,event=update_apt_keys[0Ktravis_time:start:1d50eb50[0Ktravis_time:end:1d50eb50:start=1594808573373601303,finish=1594808573479987641,duration=106386338,event=fix_hhvm_source[0Ktravis_time:start:17b10158[0Ktravis_time:end:17b10158:start=1594808573487071346,finish=1594808573493660156,duration=6588810,event=update_mongo_arch[0Ktravis_time:start:0155ad62[0Ktravis_time:end:0155ad62:start=1594808573501924397,finish=1594808573573183374,duration=71258977,event=fix_sudo_enabled_trusty[0Ktravis_time:start:0264753e[0Ktravis_time:end:0264753e:start=1594808573580501335,finish=1594808573599208577,duration=18707242,event=clean_up_path[0Ktravis_time:start:007ad400[0Ktravis_time:end:007ad400:start=1594808573607931709,finish=1594808573631494105,duration=23562396,event=fix_resolv_conf[0Ktravis_time:start:0684d329[0Ktravis_time:end:0684d329:start=1594808573639497683,finish=1594808573665597623,duration=26099940,event=fix_etc_hosts[0Ktravis_time:start:33ac8048[0Ktravis_time:end:33ac8048:start=1594808573672570954,finish=1594808573693095042,duration=20524088,event=fix_mvn_settings_xml[0Ktravis_time:start:125dde7e[0Ktravis_time:end:125dde7e:start=1594808573700382844,finish=1594808573723705130,duration=23322286,event=no_ipv6_localhost[0Ktravis_time:start:36e1a7d6[0Ktravis_time:end:36e1a7d6:start=1594808573730293128,finish=1594808573735115989,duration=4822861,event=fix_etc_mavenrc[0Ktravis_time:start:070307ba[0Ktravis_time:end:070307ba:start=1594808573741342960,finish=1594808573748686804,duration=7343844,event=fix_wwdr_certificate[0Ktravis_time:start:0867c9f0[0Ktravis_time:end:0867c9f0:start=1594808573755833738,finish=1594808573807711574,duration=51877836,event=put_localhost_first[0Ktravis_time:start:0a83b23d[0Ktravis_time:end:0a83b23d:start=1594808573816469081,finish=1594808573822859794,duration=6390713,event=home_paths[0Ktravis_time:start:12bf7bc6[0Ktravis_time:end:12bf7bc6:start=1594808573830146247,finish=1594808573857695143,duration=27548896,event=disable_initramfs[0Ktravis_time:start:0dceab78[0Ktravis_time:end:0dceab78:start=1594808573866429147,finish=1594808574167687512,duration=301258365,event=disable_ssh_roaming[0Ktravis_time:start:033f768e[0Ktravis_time:end:033f768e:start=1594808574175480686,finish=1594808574181129593,duration=5648907,event=debug_tools[0Ktravis_time:start:02dfa197[0Ktravis_time:end:02dfa197:start=1594808574188704808,finish=1594808574196760025,duration=8055217,event=uninstall_oclint[0Ktravis_time:start:29f443d1[0Ktravis_time:end:29f443d1:start=1594808574204147099,finish=1594808574211881980,duration=7734881,event=rvm_use[0Ktravis_time:start:024c687c[0Ktravis_time:end:024c687c:start=1594808574219304376,finish=1594808574237921526,duration=18617150,event=rm_etc_boto_cfg[0Ktravis_time:start:00723a1e[0Ktravis_time:end:00723a1e:start=1594808574244869799,finish=1594808574250260982,duration=5391183,event=rm_oraclejdk8_symlink[0Ktravis_time:start:005f695f[0Ktravis_time:end:005f695f:start=1594808574257371272,finish=1594808574408456356,duration=151085084,event=enable_i386[0Ktravis_time:start:1a28c998[0Ktravis_time:end:1a28c998:start=1594808574416752000,finish=1594808574425691210,duration=8939210,event=update_rubygems[0Ktravis_time:start:2bbe147f[0Ktravis_time:end:2bbe147f:start=1594808574433181008,finish=1594808577201779847,duration=2768598839,event=ensure_path_components[0Ktravis_time:start:23e2e4c1[0Ktravis_time:end:23e2e4c1:start=1594808577209364712,finish=1594808577217146125,duration=7781413,event=redefine_curl[0Ktravis_time:start:0c275398[0Ktravis_time:end:0c275398:start=1594808577225183290,finish=1594808577231955495,duration=6772205,event=nonblock_pipe[0Ktravis_time:start:0ad3d10a[0Ktravis_time:end:0ad3d10a:start=1594808577240116795,finish=1594808577282201329,duration=42084534,event=apt_get_update[0Ktravis_time:start:016c9aee[0Ktravis_time:end:016c9aee:start=1594808577289420549,finish=1594808577294864967,duration=5444418,event=deprecate_xcode_64[0Ktravis_time:start:18c7bfe7[0Ktravis_time:end:18c7bfe7:start=1594808577301517449,finish=1594808585324670367,duration=8023152918,event=update_heroku[0Ktravis_time:start:018dfb34[0Ktravis_time:end:018dfb34:start=1594808585332936295,finish=1594808585339934699,duration=6998404,event=shell_session_update[0Ktravis_time:start:1246eaf8[0Ktravis_fold:start:docker_mtu[0Ktee: /etc/docker/daemon.json: No such file or directory
+docker: unrecognized service
+travis_fold:end:docker_mtu[0Ktravis_time:end:1246eaf8:start=1594808585346952655,finish=1594808585402340222,duration=55387567,event=set_docker_mtu[0Ktravis_time:start:006b47e6[0Ktravis_time:end:006b47e6:start=1594808585411422255,finish=1594808585441787339,duration=30365084,event=resolvconf[0Ktravis_time:start:2c28d806[0Ktravis_time:end:2c28d806:start=1594808585451752034,finish=1594808585657312653,duration=205560619,event=maven_https[0Ktravis_time:start:248b3e48[0Ktravis_time:end:248b3e48:start=1594808585664106720,finish=1594808585669494476,duration=5387756,event=fix_ps4[0Ktravis_time:start:091677ba[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:3a95c733[0K$ git clone --depth=50 --branch='' https://github.com/rlite/rlite.git rlite/rlite
+Cloning into 'rlite/rlite'...
+warning: Could not find remote branch  to clone.
+fatal: Remote branch  not found in upstream origin
+
+[31;1mThe command "eval git clone --depth=50 --branch='' https://github.com/rlite/rlite.git rlite/rlite " failed. Retrying, 2 of 3.[0m
+
+Cloning into 'rlite/rlite'...
+warning: Could not find remote branch  to clone.
+fatal: Remote branch  not found in upstream origin
+
+[31;1mThe command "eval git clone --depth=50 --branch='' https://github.com/rlite/rlite.git rlite/rlite " failed. Retrying, 3 of 3.[0m
+
+Cloning into 'rlite/rlite'...
+warning: Could not find remote branch  to clone.
+fatal: Remote branch  not found in upstream origin
+
+[31;1mThe command "eval git clone --depth=50 --branch='' https://github.com/rlite/rlite.git rlite/rlite " failed 3 times.[0m
+
+travis_time:end:3a95c733:start=1594808585687475730,finish=1594808590830622960,duration=5143147230,event=checkout[0K$ cd rlite/rlite
+/home/travis/.travis/functions: line 109: cd: rlite/rlite: No such file or directory
+$ git checkout -qf 
+travis_fold:end:git.checkout[0K
+travis_time:end:3a95c733:start=1594808585687475730,finish=1594808591006679797,duration=5319204067,event=checkout[0Ktravis_time:start:0dd24409[0Ktravis_time:end:0dd24409:start=1594808591014780909,finish=1594808591027651199,duration=12870290,event=env[0K$ export TRAVIS_COMPILER=g++
+$ export CXX=${CXX:-g++}
+$ export CXX_FOR_BUILD=${CXX_FOR_BUILD:-g++}
+$ export CC=${CC:-gcc}
+$ export CC_FOR_BUILD=${CC_FOR_BUILD:-gcc}
+$ g++ --version
+g++ (Ubuntu 5.4.0-6ubuntu1~16.04.11) 5.4.0 20160609
+Copyright (C) 2015 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+travis_fold:start:before_install.1[0Ktravis_time:start:13b5c6d9[0K$ sudo apt-get -qq update
+travis_time:end:13b5c6d9:start=1594808591043914237,finish=1594808603738720226,duration=12694805989,event=before_install[0Ktravis_fold:end:before_install.1[0Ktravis_fold:start:before_install.2[0Ktravis_time:start:1729d8b6[0K$ sudo apt-get install -y gcc
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 1%Reading package lists... 5%Reading package lists... 5%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 19%Reading package lists... 39%Reading package lists... 39%Reading package lists... 40%Reading package lists... 68%Reading package lists... 68%Reading package lists... 69%Reading package lists... 69%Reading package lists... 69%Reading package lists... 69%Reading package lists... 75%Reading package lists... 75%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 81%Reading package lists... 83%Reading package lists... 83%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 91%Reading package lists... 91%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 97%Reading package lists... 97%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... 65%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+gcc is already the newest version (4:5.3.1-1ubuntu1).
+0 upgraded, 0 newly installed, 0 to remove and 235 not upgraded.
+travis_time:end:1729d8b6:start=1594808603748203572,finish=1594808607366731146,duration=3618527574,event=before_install[0Ktravis_fold:end:before_install.2[0Ktravis_fold:start:before_install.3[0Ktravis_time:start:139bec4b[0K$ sudo apt-get install -y g++
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 1%Reading package lists... 5%Reading package lists... 5%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 18%Reading package lists... 39%Reading package lists... 39%Reading package lists... 42%Reading package lists... 68%Reading package lists... 68%Reading package lists... 69%Reading package lists... 69%Reading package lists... 69%Reading package lists... 69%Reading package lists... 75%Reading package lists... 75%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 91%Reading package lists... 91%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 97%Reading package lists... 97%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... 96%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+g++ is already the newest version (4:5.3.1-1ubuntu1).
+0 upgraded, 0 newly installed, 0 to remove and 235 not upgraded.
+travis_time:end:139bec4b:start=1594808607374008198,finish=1594808610674674593,duration=3300666395,event=before_install[0Ktravis_fold:end:before_install.3[0Ktravis_fold:start:before_install.4[0Ktravis_time:start:001b31a9[0K$ sudo apt-get install -y libprotobuf-dev
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 1%Reading package lists... 5%Reading package lists... 5%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 26%Reading package lists... 39%Reading package lists... 39%Reading package lists... 56%Reading package lists... 68%Reading package lists... 68%Reading package lists... 69%Reading package lists... 69%Reading package lists... 69%Reading package lists... 69%Reading package lists... 75%Reading package lists... 75%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 83%Reading package lists... 83%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 91%Reading package lists... 91%Reading package lists... 93%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 97%Reading package lists... 97%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... 64%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following additional packages will be installed:
+  libprotobuf9v5
+The following NEW packages will be installed:
+  libprotobuf-dev libprotobuf9v5
+0 upgraded, 2 newly installed, 0 to remove and 235 not upgraded.
+Need to get 800 kB of archives.
+After this operation, 5,003 kB of additional disk space will be used.
+0% [Working]            Get:1 http://archive.ubuntu.com/ubuntu xenial/main amd64 libprotobuf9v5 amd64 2.6.1-1.3 [326 kB]
+1% [1 libprotobuf9v5 14.2 kB/326 kB 4%]16% [1 libprotobuf9v5 163 kB/326 kB 50%]                                        43% [Working]             Get:2 http://archive.ubuntu.com/ubuntu xenial/main amd64 libprotobuf-dev amd64 2.6.1-1.3 [473 kB]
+43% [2 libprotobuf-dev 0 B/473 kB 0%]                                     100% [Working]              Fetched 800 kB in 1s (644 kB/s)
+Selecting previously unselected package libprotobuf9v5:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 66465 files and directories currently installed.)
+Preparing to unpack .../libprotobuf9v5_2.6.1-1.3_amd64.deb ...
+Unpacking libprotobuf9v5:amd64 (2.6.1-1.3) ...
+Selecting previously unselected package libprotobuf-dev:amd64.
+Preparing to unpack .../libprotobuf-dev_2.6.1-1.3_amd64.deb ...
+Unpacking libprotobuf-dev:amd64 (2.6.1-1.3) ...
+Processing triggers for libc-bin (2.23-0ubuntu11) ...
+Setting up libprotobuf9v5:amd64 (2.6.1-1.3) ...
+Setting up libprotobuf-dev:amd64 (2.6.1-1.3) ...
+Processing triggers for libc-bin (2.23-0ubuntu11) ...
+travis_time:end:001b31a9:start=1594808610682882622,finish=1594808627287807041,duration=16604924419,event=before_install[0Ktravis_fold:end:before_install.4[0Ktravis_fold:start:before_install.5[0Ktravis_time:start:0884df70[0K$ sudo apt-get install -y protobuf-compiler
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 1%Reading package lists... 5%Reading package lists... 5%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 17%Reading package lists... 37%Reading package lists... 39%Reading package lists... 39%Reading package lists... 68%Reading package lists... 68%Reading package lists... 69%Reading package lists... 69%Reading package lists... 69%Reading package lists... 69%Reading package lists... 74%Reading package lists... 75%Reading package lists... 75%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 83%Reading package lists... 83%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 91%Reading package lists... 91%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 97%Reading package lists... 97%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... 60%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following additional packages will be installed:
+  libprotoc9v5
+The following NEW packages will be installed:
+  libprotoc9v5 protobuf-compiler
+0 upgraded, 2 newly installed, 0 to remove and 235 not upgraded.
+Need to get 293 kB of archives.
+After this operation, 1,129 kB of additional disk space will be used.
+0% [Working]            Get:1 http://archive.ubuntu.com/ubuntu xenial/main amd64 libprotoc9v5 amd64 2.6.1-1.3 [273 kB]
+4% [1 libprotoc9v5 14.2 kB/273 kB 5%]45% [1 libprotoc9v5 165 kB/273 kB 60%]                                      84% [Working]             Get:2 http://archive.ubuntu.com/ubuntu xenial/main amd64 protobuf-compiler amd64 2.6.1-1.3 [20.4 kB]
+90% [2 protobuf-compiler 20.4 kB/20.4 kB 100%]                                              100% [Working]              Fetched 293 kB in 1s (281 kB/s)
+Selecting previously unselected package libprotoc9v5:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 66527 files and directories currently installed.)
+Preparing to unpack .../libprotoc9v5_2.6.1-1.3_amd64.deb ...
+Unpacking libprotoc9v5:amd64 (2.6.1-1.3) ...
+Selecting previously unselected package protobuf-compiler.
+Preparing to unpack .../protobuf-compiler_2.6.1-1.3_amd64.deb ...
+Unpacking protobuf-compiler (2.6.1-1.3) ...
+Processing triggers for libc-bin (2.23-0ubuntu11) ...
+Processing triggers for man-db (2.7.5-1) ...
+Setting up libprotoc9v5:amd64 (2.6.1-1.3) ...
+Setting up protobuf-compiler (2.6.1-1.3) ...
+Processing triggers for libc-bin (2.23-0ubuntu11) ...
+travis_time:end:0884df70:start=1594808627295678502,finish=1594808643915671866,duration=16619993364,event=before_install[0Ktravis_fold:end:before_install.5[0Ktravis_fold:start:before_install.6[0Ktravis_time:start:2e9fd046[0K$ sudo apt-get install -y cmake
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 1%Reading package lists... 5%Reading package lists... 5%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 20%Reading package lists... 39%Reading package lists... 39%Reading package lists... 40%Reading package lists... 68%Reading package lists... 68%Reading package lists... 69%Reading package lists... 69%Reading package lists... 69%Reading package lists... 69%Reading package lists... 75%Reading package lists... 75%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 80%Reading package lists... 83%Reading package lists... 83%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 91%Reading package lists... 91%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 97%Reading package lists... 97%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... 51%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following additional packages will be installed:
+  cmake-data libarchive13 libjsoncpp1
+Suggested packages:
+  codeblocks eclipse ninja-build lrzip
+The following NEW packages will be installed:
+  cmake cmake-data libarchive13 libjsoncpp1
+0 upgraded, 4 newly installed, 0 to remove and 235 not upgraded.
+Need to get 4,078 kB of archives.
+After this operation, 21.2 MB of additional disk space will be used.
+0% [Working]            Get:1 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 cmake-data all 3.5.1-1ubuntu3 [1,121 kB]
+0% [1 cmake-data 14.2 kB/1,121 kB 1%]3% [1 cmake-data 168 kB/1,121 kB 15%]                                     27% [Working]             Get:2 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libarchive13 amd64 3.1.2-11ubuntu0.16.04.8 [262 kB]
+28% [2 libarchive13 44.6 kB/262 kB 17%]                                       37% [Working]             Get:3 http://archive.ubuntu.com/ubuntu xenial/main amd64 libjsoncpp1 amd64 1.7.2-1 [73.0 kB]
+38% [3 libjsoncpp1 58.7 kB/73.0 kB 80%]                                       44% [Working]             Get:4 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 cmake amd64 3.5.1-1ubuntu3 [2,623 kB]
+45% [4 cmake 51.0 kB/2,623 kB 2%]                                 100% [Working]              Fetched 4,078 kB in 1s (2,544 kB/s)
+Selecting previously unselected package cmake-data.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 66553 files and directories currently installed.)
+Preparing to unpack .../cmake-data_3.5.1-1ubuntu3_all.deb ...
+Unpacking cmake-data (3.5.1-1ubuntu3) ...
+Selecting previously unselected package libarchive13:amd64.
+Preparing to unpack .../libarchive13_3.1.2-11ubuntu0.16.04.8_amd64.deb ...
+Unpacking libarchive13:amd64 (3.1.2-11ubuntu0.16.04.8) ...
+Selecting previously unselected package libjsoncpp1:amd64.
+Preparing to unpack .../libjsoncpp1_1.7.2-1_amd64.deb ...
+Unpacking libjsoncpp1:amd64 (1.7.2-1) ...
+Selecting previously unselected package cmake.
+Preparing to unpack .../cmake_3.5.1-1ubuntu3_amd64.deb ...
+Unpacking cmake (3.5.1-1ubuntu3) ...
+Processing triggers for man-db (2.7.5-1) ...
+Processing triggers for libc-bin (2.23-0ubuntu11) ...
+Setting up cmake-data (3.5.1-1ubuntu3) ...
+Install cmake-data for emacs24
+install/cmake-data: Byte-compiling for emacs24
+Wrote /usr/share/emacs24/site-lisp/cmake-data/cmake-mode.elc
+Setting up libarchive13:amd64 (3.1.2-11ubuntu0.16.04.8) ...
+Setting up libjsoncpp1:amd64 (1.7.2-1) ...
+Setting up cmake (3.5.1-1ubuntu3) ...
+Processing triggers for libc-bin (2.23-0ubuntu11) ...
+travis_time:end:2e9fd046:start=1594808643924478955,finish=1594808662433210476,duration=18508731521,event=before_install[0Ktravis_fold:end:before_install.6[0Ktravis_fold:start:before_install.7[0Ktravis_time:start:36d66286[0K$ sudo apt-get install -y python
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 1%Reading package lists... 5%Reading package lists... 5%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 26%Reading package lists... 39%Reading package lists... 39%Reading package lists... 58%Reading package lists... 68%Reading package lists... 68%Reading package lists... 69%Reading package lists... 69%Reading package lists... 69%Reading package lists... 69%Reading package lists... 75%Reading package lists... 75%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 83%Reading package lists... 83%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 91%Reading package lists... 91%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 97%Reading package lists... 97%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+python is already the newest version (2.7.12-1~16.04).
+0 upgraded, 0 newly installed, 0 to remove and 235 not upgraded.
+travis_time:end:36d66286:start=1594808662443558964,finish=1594808665837811193,duration=3394252229,event=before_install[0Ktravis_fold:end:before_install.7[0Ktravis_fold:start:before_install.8[0Ktravis_time:start:0188f602[0K$ sudo apt-get install -y bc
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 1%Reading package lists... 5%Reading package lists... 5%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 22%Reading package lists... 39%Reading package lists... 39%Reading package lists... 44%Reading package lists... 68%Reading package lists... 68%Reading package lists... 69%Reading package lists... 69%Reading package lists... 69%Reading package lists... 69%Reading package lists... 75%Reading package lists... 75%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 91%Reading package lists... 91%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 97%Reading package lists... 97%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... 55%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following NEW packages will be installed:
+  bc
+0 upgraded, 1 newly installed, 0 to remove and 235 not upgraded.
+Need to get 82.6 kB of archives.
+After this operation, 246 kB of additional disk space will be used.
+0% [Working]            Get:1 http://archive.ubuntu.com/ubuntu xenial/main amd64 bc amd64 1.06.95-9build1 [82.6 kB]
+14% [1 bc 14.2 kB/82.6 kB 17%]                              100% [Working]              Fetched 82.6 kB in 0s (133 kB/s)
+Selecting previously unselected package bc.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 68616 files and directories currently installed.)
+Preparing to unpack .../bc_1.06.95-9build1_amd64.deb ...
+Unpacking bc (1.06.95-9build1) ...
+Processing triggers for man-db (2.7.5-1) ...
+Processing triggers for install-info (6.1.0.dfsg.1-5) ...
+Setting up bc (1.06.95-9build1) ...
+travis_time:end:0188f602:start=1594808665845238043,finish=1594808682021787737,duration=16176549694,event=before_install[0Ktravis_fold:end:before_install.8[0Ktravis_fold:start:before_install.9[0Ktravis_time:start:3334d940[0K$ sudo apt-get install -y kmod
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 1%Reading package lists... 5%Reading package lists... 5%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 19%Reading package lists... 39%Reading package lists... 39%Reading package lists... 39%Reading package lists... 68%Reading package lists... 68%Reading package lists... 69%Reading package lists... 69%Reading package lists... 69%Reading package lists... 69%Reading package lists... 75%Reading package lists... 75%Reading package lists... 76%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 83%Reading package lists... 83%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 91%Reading package lists... 91%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 97%Reading package lists... 97%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+kmod is already the newest version (22-1ubuntu5.2).
+0 upgraded, 0 newly installed, 0 to remove and 235 not upgraded.
+travis_time:end:3334d940:start=1594808682029074221,finish=1594808685856394958,duration=3827320737,event=before_install[0Ktravis_fold:end:before_install.9[0Ktravis_fold:start:before_install.10[0Ktravis_time:start:00a49a7a[0K$ sudo apt-get install -y linux-headers-$(uname -r)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 1%Reading package lists... 5%Reading package lists... 5%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 27%Reading package lists... 39%Reading package lists... 39%Reading package lists... 57%Reading package lists... 68%Reading package lists... 68%Reading package lists... 69%Reading package lists... 69%Reading package lists... 69%Reading package lists... 69%Reading package lists... 75%Reading package lists... 75%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 83%Reading package lists... 83%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 91%Reading package lists... 91%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following additional packages will be installed:
+  linux-headers-4.4.0-112
+The following NEW packages will be installed:
+  linux-headers-4.4.0-112 linux-headers-4.4.0-112-generic
+0 upgraded, 2 newly installed, 0 to remove and 235 not upgraded.
+Need to get 10.7 MB of archives.
+After this operation, 78.2 MB of additional disk space will be used.
+0% [Working]            Get:1 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 linux-headers-4.4.0-112 all 4.4.0-112.135 [9,925 kB]
+0% [1 linux-headers-4.4.0-112 14.2 kB/9,925 kB 0%]                                                  1% [1 linux-headers-4.4.0-112 165 kB/9,925 kB 2%]14% [1 linux-headers-4.4.0-112 1,933 kB/9,925 kB 19%]68% [1 linux-headers-4.4.0-112 9,084 kB/9,925 kB 92%]                                                     84% [Working]             Get:2 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 linux-headers-4.4.0-112-generic amd64 4.4.0-112.135 [775 kB]
+84% [2 linux-headers-4.4.0-112-generic 35.8 kB/775 kB 5%]                                                         100% [Working]              Fetched 10.7 MB in 2s (5,218 kB/s)
+Selecting previously unselected package linux-headers-4.4.0-112.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 68633 files and directories currently installed.)
+Preparing to unpack .../linux-headers-4.4.0-112_4.4.0-112.135_all.deb ...
+Unpacking linux-headers-4.4.0-112 (4.4.0-112.135) ...
+Selecting previously unselected package linux-headers-4.4.0-112-generic.
+Preparing to unpack .../linux-headers-4.4.0-112-generic_4.4.0-112.135_amd64.deb ...
+Unpacking linux-headers-4.4.0-112-generic (4.4.0-112.135) ...
+Setting up linux-headers-4.4.0-112 (4.4.0-112.135) ...
+Setting up linux-headers-4.4.0-112-generic (4.4.0-112.135) ...
+travis_time:end:00a49a7a:start=1594808685864057845,finish=1594808712959568051,duration=27095510206,event=before_install[0Ktravis_fold:end:before_install.10[0Ktravis_time:start:0f563998[0K$ ./configure
+/usr/local/cmake-3.12.4/bin/cmake
+-- The C compiler identification is GNU 5.4.0
+-- The CXX compiler identification is GNU 5.4.0
+-- Check for working C compiler: /usr/bin/gcc
+-- Check for working C compiler: /usr/bin/gcc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/g++
+-- Check for working CXX compiler: /usr/bin/g++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- C Compiler: /usr/bin/gcc
+-- C++ Compiler: /usr/bin/g++
+-- CMAKE_CURRENT_SOURCE_DIR: /home/travis/build
+-- INCLUDE_DIR: /home/travis/build/include
+-- RLITE HEADERS: /home/travis/build/include/rlite/common.h;/home/travis/build/include/rlite/conf.h;/home/travis/build/include/rlite/ctrl.h;/home/travis/build/include/rlite/kernel-msg.h;/home/travis/build/include/rlite/list.h;/home/travis/build/include/rlite/uipcps-helpers.h;/home/travis/build/include/rlite/uipcps-msg.h;/home/travis/build/include/rlite/utils.h;/home/travis/build/include/rlite/wifi.h
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found version "2.6.1") 
+-- PROTOBUF VERSION 2.6.1
+-- Adding include dir /home/travis/build/build/user/libs to cdap target
+-- Could NOT find SWIG (missing: SWIG_EXECUTABLE SWIG_DIR) 
+-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.5m.so (found version "3.5.2") 
+SWIG not found: Python bindings will not be built
+-- Adding include dir /home/travis/build/build/user/tools to iporinad target
+-- Adding include dir /home/travis/build/build/user/uipcps to uipcp-normal target
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/travis/build/build
+Generating IPCP flavours ...
+... flavours generated
+travis_time:end:0f563998:start=1594808712968121179,finish=1594808718678713196,duration=5710592017,event=script[0K[32;1mThe command "./configure" exited with 0.[0m
+travis_time:start:00b69bd0[0K$ make
+cd build &&  make
+make[1]: Entering directory '/home/travis/build/build'
+make[2]: Entering directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+[35m[1mScanning dependencies of target rina-api[0m
+make[3]: Leaving directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+[  1%] [32mBuilding C object user/libs/CMakeFiles/rina-api.dir/utils.c.o[0m
+[  2%] [32mBuilding C object user/libs/CMakeFiles/rina-api.dir/ker-numtables.c.o[0m
+[  4%] [32mBuilding C object user/libs/CMakeFiles/rina-api.dir/uipcps-numtables.c.o[0m
+[  5%] [32mBuilding C object user/libs/CMakeFiles/rina-api.dir/ctrl.c.o[0m
+[  7%] [32mBuilding C object user/libs/CMakeFiles/rina-api.dir/memtrack.c.o[0m
+[  8%] [32m[1mLinking C shared library librina-api.so[0m
+make[3]: Leaving directory '/home/travis/build/build'
+[  8%] Built target rina-api
+make[3]: Entering directory '/home/travis/build/build'
+[35m[1mScanning dependencies of target rlite-conf[0m
+make[3]: Leaving directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+[ 10%] [32mBuilding C object user/libs/CMakeFiles/rlite-conf.dir/conf.c.o[0m
+[ 11%] [32m[1mLinking C shared library librlite-conf.so[0m
+make[3]: Leaving directory '/home/travis/build/build'
+[ 11%] Built target rlite-conf
+make[3]: Entering directory '/home/travis/build/build'
+[ 12%] [34m[1mRunning C++ protocol buffer compiler on CDAP.proto[0m
+[35m[1mScanning dependencies of target cdap[0m
+make[3]: Leaving directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+[ 14%] [32mBuilding CXX object user/libs/CMakeFiles/cdap.dir/cdap.cpp.o[0m
+[ 15%] [32mBuilding CXX object user/libs/CMakeFiles/cdap.dir/CDAP.pb.cc.o[0m
+[ 17%] [32m[1mLinking CXX shared library libcdap.so[0m
+make[3]: Leaving directory '/home/travis/build/build'
+[ 17%] Built target cdap
+make[3]: Entering directory '/home/travis/build/build'
+[35m[1mScanning dependencies of target rlite-raft[0m
+make[3]: Leaving directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+[ 18%] [32mBuilding CXX object user/libs/CMakeFiles/rlite-raft.dir/raft.cpp.o[0m
+[ 20%] [32m[1mLinking CXX static library librlite-raft.a[0m
+make[3]: Leaving directory '/home/travis/build/build'
+[ 20%] Built target rlite-raft
+make[3]: Entering directory '/home/travis/build/build'
+[35m[1mScanning dependencies of target wpa-supplicant[0m
+make[3]: Leaving directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+[ 21%] [32mBuilding C object user/libs/wpa-supplicant/CMakeFiles/wpa-supplicant.dir/os_unix.c.o[0m
+[ 22%] [32mBuilding C object user/libs/wpa-supplicant/CMakeFiles/wpa-supplicant.dir/wpa_ctrl.c.o[0m
+[ 24%] [32m[1mLinking C static library libwpa-supplicant.a[0m
+make[3]: Leaving directory '/home/travis/build/build'
+[ 24%] Built target wpa-supplicant
+make[3]: Entering directory '/home/travis/build/build'
+[35m[1mScanning dependencies of target rlite-wifi[0m
+make[3]: Leaving directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+[ 25%] [32mBuilding C object user/libs/CMakeFiles/rlite-wifi.dir/wifi.c.o[0m
+[ 27%] [32m[1mLinking C static library librlite-wifi.a[0m
+make[3]: Leaving directory '/home/travis/build/build'
+[ 27%] Built target rlite-wifi
+make[3]: Entering directory '/home/travis/build/build'
+[35m[1mScanning dependencies of target cdap-test[0m
+make[3]: Leaving directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+[ 28%] [32mBuilding CXX object user/libs/CMakeFiles/cdap-test.dir/cdap-test.cpp.o[0m
+[ 30%] [32m[1mLinking CXX executable cdap-test[0m
+make[3]: Leaving directory '/home/travis/build/build'
+[ 30%] Built target cdap-test
+make[3]: Entering directory '/home/travis/build/build'
+[35m[1mScanning dependencies of target raft-test[0m
+make[3]: Leaving directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+[ 31%] [32mBuilding CXX object user/libs/CMakeFiles/raft-test.dir/raft-test.cpp.o[0m
+[ 32%] [32m[1mLinking CXX executable raft-test[0m
+make[3]: Leaving directory '/home/travis/build/build'
+[ 32%] Built target raft-test
+make[3]: Entering directory '/home/travis/build/build'
+[35m[1mScanning dependencies of target rlite-ctl[0m
+make[3]: Leaving directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+[ 34%] [32mBuilding C object user/tools/CMakeFiles/rlite-ctl.dir/rlite-ctl.c.o[0m
+[ 35%] [32m[1mLinking C executable rlite-ctl[0m
+make[3]: Leaving directory '/home/travis/build/build'
+[ 35%] Built target rlite-ctl
+make[3]: Entering directory '/home/travis/build/build'
+[35m[1mScanning dependencies of target rinaperf[0m
+make[3]: Leaving directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+[ 37%] [32mBuilding C object user/tools/CMakeFiles/rinaperf.dir/rinaperf.c.o[0m
+[ 38%] [32m[1mLinking C executable rinaperf[0m
+make[3]: Leaving directory '/home/travis/build/build'
+[ 38%] Built target rinaperf
+make[3]: Entering directory '/home/travis/build/build'
+[35m[1mScanning dependencies of target fdfwd[0m
+make[3]: Leaving directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+[ 40%] [32mBuilding CXX object user/tools/CMakeFiles/fdfwd.dir/fdfwd.cpp.o[0m
+[ 41%] [32m[1mLinking CXX static library libfdfwd.a[0m
+make[3]: Leaving directory '/home/travis/build/build'
+[ 41%] Built target fdfwd
+make[3]: Entering directory '/home/travis/build/build'
+[35m[1mScanning dependencies of target rina-gw[0m
+make[3]: Leaving directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+[ 42%] [32mBuilding CXX object user/tools/CMakeFiles/rina-gw.dir/rina-gw.cpp.o[0m
+[ 44%] [32m[1mLinking CXX executable rina-gw[0m
+make[3]: Leaving directory '/home/travis/build/build'
+[ 44%] Built target rina-gw
+make[3]: Entering directory '/home/travis/build/build'
+[35m[1mScanning dependencies of target test-wifi[0m
+make[3]: Leaving directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+[ 45%] [32mBuilding C object user/tools/CMakeFiles/test-wifi.dir/test-wifi.c.o[0m
+[ 47%] [32m[1mLinking C executable test-wifi[0m
+make[3]: Leaving directory '/home/travis/build/build'
+[ 47%] Built target test-wifi
+make[3]: Entering directory '/home/travis/build/build'
+[35m[1mScanning dependencies of target rina-echo-async[0m
+make[3]: Leaving directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+[ 48%] [32mBuilding C object user/tools/CMakeFiles/rina-echo-async.dir/rina-echo-async.c.o[0m
+[ 50%] [32m[1mLinking C executable rina-echo-async[0m
+make[3]: Leaving directory '/home/travis/build/build'
+[ 50%] Built target rina-echo-async
+make[3]: Entering directory '/home/travis/build/build'
+[ 51%] [34m[1mRunning C++ protocol buffer compiler on iporina.proto[0m
+[35m[1mScanning dependencies of target iporinad[0m
+make[3]: Leaving directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+[ 52%] [32mBuilding CXX object user/tools/CMakeFiles/iporinad.dir/iporinad.cpp.o[0m
+[ 54%] [32mBuilding CXX object user/tools/CMakeFiles/iporinad.dir/iporina.pb.cc.o[0m
+[ 55%] [32m[1mLinking CXX executable iporinad[0m
+make[3]: Leaving directory '/home/travis/build/build'
+[ 55%] Built target iporinad
+make[3]: Entering directory '/home/travis/build/build'
+[35m[1mScanning dependencies of target rinacat[0m
+make[3]: Leaving directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+[ 57%] [32mBuilding C object user/tools/rinacat/CMakeFiles/rinacat.dir/rinacat.c.o[0m
+[ 58%] [32m[1mLinking C executable rinacat[0m
+make[3]: Leaving directory '/home/travis/build/build'
+[ 58%] Built target rinacat
+make[3]: Entering directory '/home/travis/build/build'
+[ 60%] [34m[1mRunning C++ protocol buffer compiler on /home/travis/build/user/uipcps/uipcp-gpb/Raft.proto[0m
+[ 61%] [34m[1mRunning C++ protocol buffer compiler on /home/travis/build/user/uipcps/uipcp-gpb/BaseRIB.proto[0m
+[35m[1mScanning dependencies of target uipcp-normal[0m
+make[3]: Leaving directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+[ 62%] [32mBuilding CXX object user/uipcps/CMakeFiles/uipcp-normal.dir/uipcp-normal.cpp.o[0m
+[ 64%] [32mBuilding CXX object user/uipcps/CMakeFiles/uipcp-normal.dir/uipcp-normal-enroll.cpp.o[0m
+[ 65%] [32mBuilding CXX object user/uipcps/CMakeFiles/uipcp-normal.dir/uipcp-normal-flow-alloc.cpp.o[0m
+[ 67%] [32mBuilding CXX object user/uipcps/CMakeFiles/uipcp-normal.dir/uipcp-normal-appl-reg.cpp.o[0m
+[ 68%] [32mBuilding CXX object user/uipcps/CMakeFiles/uipcp-normal.dir/uipcp-normal-lower-flows.cpp.o[0m
+[ 70%] [32mBuilding CXX object user/uipcps/CMakeFiles/uipcp-normal.dir/uipcp-normal-lfdb.cpp.o[0m
+[ 71%] [32mBuilding CXX object user/uipcps/CMakeFiles/uipcp-normal.dir/uipcp-normal-addr-alloc.cpp.o[0m
+[ 72%] [32mBuilding CXX object user/uipcps/CMakeFiles/uipcp-normal.dir/uipcp-normal-ceft.cpp.o[0m
+[ 74%] [32mBuilding CXX object user/uipcps/CMakeFiles/uipcp-normal.dir/uipcp-normal-qos.cpp.o[0m
+[ 75%] [32mBuilding CXX object user/uipcps/CMakeFiles/uipcp-normal.dir/BaseRIB.pb.cc.o[0m
+[ 77%] [32mBuilding CXX object user/uipcps/CMakeFiles/uipcp-normal.dir/Raft.pb.cc.o[0m
+[ 78%] [32m[1mLinking CXX static library libuipcp-normal.a[0m
+make[3]: Leaving directory '/home/travis/build/build'
+[ 78%] Built target uipcp-normal
+make[3]: Entering directory '/home/travis/build/build'
+[35m[1mScanning dependencies of target policy-deps-test[0m
+make[3]: Leaving directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+[ 80%] [32mBuilding CXX object user/uipcps/CMakeFiles/policy-deps-test.dir/policy-deps-test.cpp.o[0m
+[ 81%] [32mBuilding C object user/uipcps/CMakeFiles/policy-deps-test.dir/uipcp-container.c.o[0m
+[ 82%] [32mBuilding C object user/uipcps/CMakeFiles/policy-deps-test.dir/uipcp-unix.c.o[0m
+[ 84%] [32mBuilding C object user/uipcps/CMakeFiles/policy-deps-test.dir/uipcp-shim-tcp4.c.o[0m
+[ 85%] [32mBuilding C object user/uipcps/CMakeFiles/policy-deps-test.dir/uipcp-shim-udp4.c.o[0m
+[ 87%] [32mBuilding C object user/uipcps/CMakeFiles/policy-deps-test.dir/uipcp-shim-wifi.c.o[0m
+[ 88%] [32m[1mLinking CXX executable policy-deps-test[0m
+make[3]: Leaving directory '/home/travis/build/build'
+[ 88%] Built target policy-deps-test
+make[3]: Entering directory '/home/travis/build/build'
+[35m[1mScanning dependencies of target rlite-uipcps[0m
+make[3]: Leaving directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+[ 90%] [32mBuilding C object user/uipcps/CMakeFiles/rlite-uipcps.dir/uipcp-container.c.o[0m
+[ 91%] [32mBuilding C object user/uipcps/CMakeFiles/rlite-uipcps.dir/uipcp-unix.c.o[0m
+[ 92%] [32mBuilding C object user/uipcps/CMakeFiles/rlite-uipcps.dir/uipcp-shim-tcp4.c.o[0m
+[ 94%] [32mBuilding C object user/uipcps/CMakeFiles/rlite-uipcps.dir/uipcp-shim-udp4.c.o[0m
+[ 95%] [32mBuilding C object user/uipcps/CMakeFiles/rlite-uipcps.dir/uipcp-shim-wifi.c.o[0m
+[ 97%] [32m[1mLinking CXX executable rlite-uipcps[0m
+make[3]: Leaving directory '/home/travis/build/build'
+[ 97%] Built target rlite-uipcps
+make[3]: Entering directory '/home/travis/build/build'
+[35m[1mScanning dependencies of target lfdb-test[0m
+make[3]: Leaving directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+[ 98%] [32mBuilding CXX object user/uipcps/CMakeFiles/lfdb-test.dir/lfdb-test.cpp.o[0m
+[100%] [32m[1mLinking CXX executable lfdb-test[0m
+make[3]: Leaving directory '/home/travis/build/build'
+[100%] Built target lfdb-test
+make[2]: Leaving directory '/home/travis/build/build'
+make[1]: Leaving directory '/home/travis/build/build'
+make -C /lib/modules/4.4.0-112-generic/build M=/home/travis/build/kernel PWD=/home/travis/build/kernel \
+		WITH_SHIM_UDP4=y \
+		WITH_SHIM_TCP4=y \
+		modules
+make[1]: Entering directory '/usr/src/linux-headers-4.4.0-112-generic'
+  CC [M]  /home/travis/build/kernel/ctrl-dev.o
+  CC [M]  /home/travis/build/kernel/io-dev.o
+  CC [M]  /home/travis/build/kernel/utils.o
+  CC [M]  /home/travis/build/kernel/ker-numtables.o
+  CC [M]  /home/travis/build/kernel/bufs.o
+  CC [M]  /home/travis/build/kernel/normal-common.o
+  CC [M]  /home/travis/build/kernel/memtrack.o
+  LD [M]  /home/travis/build/kernel/rlite.o
+  CC [M]  /home/travis/build/kernel/shim-loopback.o
+  LD [M]  /home/travis/build/kernel/rlite-shim-loopback.o
+  CC [M]  /home/travis/build/kernel/shim-eth.o
+  LD [M]  /home/travis/build/kernel/rlite-shim-eth.o
+  CC [M]  /home/travis/build/kernel/normal.o
+  LD [M]  /home/travis/build/kernel/rlite-normal.o
+  CC [M]  /home/travis/build/kernel/shim-udp4.o
+  LD [M]  /home/travis/build/kernel/rlite-shim-udp4.o
+  CC [M]  /home/travis/build/kernel/shim-tcp4.o
+  LD [M]  /home/travis/build/kernel/rlite-shim-tcp4.o
+  CC [M]  /home/travis/build/kernel/normal-tiny.o
+  LD [M]  /home/travis/build/kernel/rlite-normal-tiny.o
+  Building modules, stage 2.
+  MODPOST 7 modules
+  CC      /home/travis/build/kernel/rlite-normal-tiny.mod.o
+  LD [M]  /home/travis/build/kernel/rlite-normal-tiny.ko
+  CC      /home/travis/build/kernel/rlite-normal.mod.o
+  LD [M]  /home/travis/build/kernel/rlite-normal.ko
+  CC      /home/travis/build/kernel/rlite-shim-eth.mod.o
+  LD [M]  /home/travis/build/kernel/rlite-shim-eth.ko
+  CC      /home/travis/build/kernel/rlite-shim-loopback.mod.o
+  LD [M]  /home/travis/build/kernel/rlite-shim-loopback.ko
+  CC      /home/travis/build/kernel/rlite-shim-tcp4.mod.o
+  LD [M]  /home/travis/build/kernel/rlite-shim-tcp4.ko
+  CC      /home/travis/build/kernel/rlite-shim-udp4.mod.o
+  LD [M]  /home/travis/build/kernel/rlite-shim-udp4.ko
+  CC      /home/travis/build/kernel/rlite.mod.o
+  LD [M]  /home/travis/build/kernel/rlite.ko
+make[1]: Leaving directory '/usr/src/linux-headers-4.4.0-112-generic'
+travis_time:end:00b69bd0:start=1594808718688729816,finish=1594808794553096224,duration=75864366408,event=script[0K[32;1mThe command "make" exited with 0.[0m
+travis_time:start:11ed9b70[0K$ make test
+cd build &&  make
+make[1]: Entering directory '/home/travis/build/build'
+make[2]: Entering directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[  8%] Built target rina-api
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 11%] Built target rlite-conf
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 17%] Built target cdap
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 20%] Built target rlite-raft
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 24%] Built target wpa-supplicant
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 27%] Built target rlite-wifi
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 30%] Built target cdap-test
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 32%] Built target raft-test
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 35%] Built target rlite-ctl
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 38%] Built target rinaperf
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 41%] Built target fdfwd
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 44%] Built target rina-gw
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 47%] Built target test-wifi
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 50%] Built target rina-echo-async
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 55%] Built target iporinad
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 58%] Built target rinacat
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 78%] Built target uipcp-normal
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 88%] Built target policy-deps-test
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 97%] Built target rlite-uipcps
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[100%] Built target lfdb-test
+make[2]: Leaving directory '/home/travis/build/build'
+make[1]: Leaving directory '/home/travis/build/build'
+cd build && make test
+make[1]: Entering directory '/home/travis/build/build'
+[36mRunning tests...[0m
+Test project /home/travis/build/build
+    Start 1: raft
+1/4 Test #1: raft .............................   Passed    0.13 sec
+    Start 2: cdap
+2/4 Test #2: cdap .............................   Passed    0.01 sec
+    Start 3: lfdb
+3/4 Test #3: lfdb .............................   Passed    0.18 sec
+    Start 4: policy-deps
+4/4 Test #4: policy-deps ......................   Passed    0.01 sec
+
+100% tests passed, 0 tests failed out of 4
+
+Total Test time (real) =   0.33 sec
+make[1]: Leaving directory '/home/travis/build/build'
+travis_time:end:11ed9b70:start=1594808794562236895,finish=1594808795399767987,duration=837531092,event=script[0K[32;1mThe command "make test" exited with 0.[0m
+travis_time:start:000eee4e[0K$ sudo make install
+cd build && make install
+make[1]: Entering directory '/home/travis/build/build'
+make[2]: Entering directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[  8%] Built target rina-api
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 11%] Built target rlite-conf
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 17%] Built target cdap
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 20%] Built target rlite-raft
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 24%] Built target wpa-supplicant
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 27%] Built target rlite-wifi
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 30%] Built target cdap-test
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 32%] Built target raft-test
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 35%] Built target rlite-ctl
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 38%] Built target rinaperf
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 41%] Built target fdfwd
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 44%] Built target rina-gw
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 47%] Built target test-wifi
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 50%] Built target rina-echo-async
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 55%] Built target iporinad
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 58%] Built target rinacat
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 78%] Built target uipcp-normal
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 88%] Built target policy-deps-test
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 97%] Built target rlite-uipcps
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[100%] Built target lfdb-test
+make[2]: Leaving directory '/home/travis/build/build'
+[36mInstall the project...[0m
+-- Install configuration: "Debug"
+-- Installing: /usr/include/rlite/common.h
+-- Installing: /usr/include/rlite/conf.h
+-- Installing: /usr/include/rlite/ctrl.h
+-- Installing: /usr/include/rlite/kernel-msg.h
+-- Installing: /usr/include/rlite/list.h
+-- Installing: /usr/include/rlite/uipcps-helpers.h
+-- Installing: /usr/include/rlite/uipcps-msg.h
+-- Installing: /usr/include/rlite/utils.h
+-- Installing: /usr/include/rlite/wifi.h
+-- Installing: /usr/include/rina/cdap.hpp
+-- Installing: /usr/include/rina/api.h
+-- Installing: /etc/bash_completion.d/rlite-ctl
+-- Installing: /usr/lib/librina-api.so
+-- Installing: /usr/lib/libcdap.so
+-- Set runtime path of "/usr/lib/libcdap.so" to ""
+-- Installing: /usr/lib/librlite-conf.so
+-- Set runtime path of "/usr/lib/librlite-conf.so" to ""
+-- Installing: /usr/include/rlite/CDAP.pb.h
+-- Installing: /usr/bin/rinaperf
+-- Set runtime path of "/usr/bin/rinaperf" to ""
+-- Installing: /usr/bin/rlite-ctl
+-- Set runtime path of "/usr/bin/rlite-ctl" to ""
+-- Installing: /usr/bin/rina-gw
+-- Set runtime path of "/usr/bin/rina-gw" to ""
+-- Installing: /usr/bin/rina-echo-async
+-- Set runtime path of "/usr/bin/rina-echo-async" to ""
+-- Installing: /usr/bin/iporinad
+-- Set runtime path of "/usr/bin/iporinad" to ""
+-- Installing: /etc/rina/rina-gw.conf
+-- Installing: /etc/rina/iporinad.conf
+-- Installing: /etc/rina/initscript
+-- Installing: /usr/bin/inet-toy
+-- Installing: /usr/bin/rina-toy
+-- Installing: /usr/bin/rlite-node-config
+-- Installing: /usr/bin/rinacat
+-- Set runtime path of "/usr/bin/rinacat" to ""
+-- Installing: /usr/bin/rlite-uipcps
+-- Set runtime path of "/usr/bin/rlite-uipcps" to ""
+-- Installing: /etc/rina/shim-tcp4-dir
+-- Installing: /usr/bin/rlite-rand-clients
+make[1]: Leaving directory '/home/travis/build/build'
+make -C /lib/modules/4.4.0-112-generic/build M=/home/travis/build/kernel PWD=/home/travis/build/kernel \
+		WITH_SHIM_UDP4=y \
+		WITH_SHIM_TCP4=y \
+		modules
+make[1]: Entering directory '/usr/src/linux-headers-4.4.0-112-generic'
+  Building modules, stage 2.
+  MODPOST 7 modules
+make[1]: Leaving directory '/usr/src/linux-headers-4.4.0-112-generic'
+make -C /lib/modules/4.4.0-112-generic/build INSTALL_MOD_PATH=/ M=/home/travis/build/kernel modules_install
+make[1]: Entering directory '/usr/src/linux-headers-4.4.0-112-generic'
+  INSTALL /home/travis/build/kernel/rlite-normal-tiny.ko
+At main.c:222:
+- SSL error:02001002:system library:fopen:No such file or directory: bss_file.c:175
+- SSL error:2006D080:BIO routines:BIO_new_file:no such file: bss_file.c:178
+sign-file: certs/signing_key.pem: No such file or directory
+  INSTALL /home/travis/build/kernel/rlite-normal.ko
+At main.c:222:
+- SSL error:02001002:system library:fopen:No such file or directory: bss_file.c:175
+- SSL error:2006D080:BIO routines:BIO_new_file:no such file: bss_file.c:178
+sign-file: certs/signing_key.pem: No such file or directory
+  INSTALL /home/travis/build/kernel/rlite-shim-eth.ko
+At main.c:222:
+- SSL error:02001002:system library:fopen:No such file or directory: bss_file.c:175
+- SSL error:2006D080:BIO routines:BIO_new_file:no such file: bss_file.c:178
+sign-file: certs/signing_key.pem: No such file or directory
+  INSTALL /home/travis/build/kernel/rlite-shim-loopback.ko
+At main.c:222:
+- SSL error:02001002:system library:fopen:No such file or directory: bss_file.c:175
+- SSL error:2006D080:BIO routines:BIO_new_file:no such file: bss_file.c:178
+sign-file: certs/signing_key.pem: No such file or directory
+  INSTALL /home/travis/build/kernel/rlite-shim-tcp4.ko
+At main.c:222:
+- SSL error:02001002:system library:fopen:No such file or directory: bss_file.c:175
+- SSL error:2006D080:BIO routines:BIO_new_file:no such file: bss_file.c:178
+sign-file: certs/signing_key.pem: No such file or directory
+  INSTALL /home/travis/build/kernel/rlite-shim-udp4.ko
+At main.c:222:
+- SSL error:02001002:system library:fopen:No such file or directory: bss_file.c:175
+- SSL error:2006D080:BIO routines:BIO_new_file:no such file: bss_file.c:178
+sign-file: certs/signing_key.pem: No such file or directory
+  INSTALL /home/travis/build/kernel/rlite.ko
+At main.c:222:
+- SSL error:02001002:system library:fopen:No such file or directory: bss_file.c:175
+- SSL error:2006D080:BIO routines:BIO_new_file:no such file: bss_file.c:178
+sign-file: certs/signing_key.pem: No such file or directory
+  DEPMOD  4.4.0-112-generic
+make[1]: Leaving directory '/usr/src/linux-headers-4.4.0-112-generic'
+travis_time:end:000eee4e:start=1594808795408798302,finish=1594808799189566671,duration=3780768369,event=script[0K[32;1mThe command "sudo make install" exited with 0.[0m
+travis_time:start:2cd8115f[0K$ sudo make depmod
+make -C /lib/modules/4.4.0-112-generic/build M=/home/travis/build/kernel PWD=/home/travis/build/kernel \
+		WITH_SHIM_UDP4=y \
+		WITH_SHIM_TCP4=y \
+		modules
+make[1]: Entering directory '/usr/src/linux-headers-4.4.0-112-generic'
+  Building modules, stage 2.
+  MODPOST 7 modules
+make[1]: Leaving directory '/usr/src/linux-headers-4.4.0-112-generic'
+make -C /lib/modules/4.4.0-112-generic/build INSTALL_MOD_PATH=/ M=/home/travis/build/kernel modules_install
+make[1]: Entering directory '/usr/src/linux-headers-4.4.0-112-generic'
+  INSTALL /home/travis/build/kernel/rlite-normal-tiny.ko
+At main.c:222:
+- SSL error:02001002:system library:fopen:No such file or directory: bss_file.c:175
+- SSL error:2006D080:BIO routines:BIO_new_file:no such file: bss_file.c:178
+sign-file: certs/signing_key.pem: No such file or directory
+  INSTALL /home/travis/build/kernel/rlite-normal.ko
+At main.c:222:
+- SSL error:02001002:system library:fopen:No such file or directory: bss_file.c:175
+- SSL error:2006D080:BIO routines:BIO_new_file:no such file: bss_file.c:178
+sign-file: certs/signing_key.pem: No such file or directory
+  INSTALL /home/travis/build/kernel/rlite-shim-eth.ko
+At main.c:222:
+- SSL error:02001002:system library:fopen:No such file or directory: bss_file.c:175
+- SSL error:2006D080:BIO routines:BIO_new_file:no such file: bss_file.c:178
+sign-file: certs/signing_key.pem: No such file or directory
+  INSTALL /home/travis/build/kernel/rlite-shim-loopback.ko
+At main.c:222:
+- SSL error:02001002:system library:fopen:No such file or directory: bss_file.c:175
+- SSL error:2006D080:BIO routines:BIO_new_file:no such file: bss_file.c:178
+sign-file: certs/signing_key.pem: No such file or directory
+  INSTALL /home/travis/build/kernel/rlite-shim-tcp4.ko
+At main.c:222:
+- SSL error:02001002:system library:fopen:No such file or directory: bss_file.c:175
+- SSL error:2006D080:BIO routines:BIO_new_file:no such file: bss_file.c:178
+sign-file: certs/signing_key.pem: No such file or directory
+  INSTALL /home/travis/build/kernel/rlite-shim-udp4.ko
+At main.c:222:
+- SSL error:02001002:system library:fopen:No such file or directory: bss_file.c:175
+- SSL error:2006D080:BIO routines:BIO_new_file:no such file: bss_file.c:178
+sign-file: certs/signing_key.pem: No such file or directory
+  INSTALL /home/travis/build/kernel/rlite.ko
+At main.c:222:
+- SSL error:02001002:system library:fopen:No such file or directory: bss_file.c:175
+- SSL error:2006D080:BIO routines:BIO_new_file:no such file: bss_file.c:178
+sign-file: certs/signing_key.pem: No such file or directory
+  DEPMOD  4.4.0-112-generic
+make[1]: Leaving directory '/usr/src/linux-headers-4.4.0-112-generic'
+depmod -b / -a
+depmod: WARNING: could not open //lib/modules/4.4.0-112-generic/modules.order: No such file or directory
+depmod: WARNING: could not open //lib/modules/4.4.0-112-generic/modules.builtin: No such file or directory
+travis_time:end:2cd8115f:start=1594808799197640496,finish=1594808802571115547,duration=3373475051,event=script[0K[32;1mThe command "sudo make depmod" exited with 0.[0m
+travis_time:start:17c3dd80[0K$ sudo make intest
+tests/run-integration-tests.sh
+[0;33m>>> Running integration test [0;36m"tests/integration/0001-no-ipcps.sh"[0m
+modprobe: ERROR: ../libkmod/libkmod.c:514 lookup_builtin_file() could not open builtin file '/lib/modules/4.4.0-112-generic/modules.builtin.bin'
+modprobe: ERROR: ../libkmod/libkmod.c:514 lookup_builtin_file() could not open builtin file '/lib/modules/4.4.0-112-generic/modules.builtin.bin'
+modprobe: ERROR: could not insert 'rlite_normal': Operation not permitted
+[0;31m>>> FAILED TO PREPARE TEST ENVIRONMENT[0m
+Makefile:52: recipe for target 'intest' failed
+make: *** [intest] Error 1
+travis_time:end:17c3dd80:start=1594808802579079341,finish=1594808802639225914,duration=60146573,event=script[0K[31;1mThe command "sudo make intest" exited with 2.[0m
+travis_time:start:008e4ddd[0K$ ./configure --debug
+/usr/local/cmake-3.12.4/bin/cmake
+scan-build: Using '/usr/local/clang-7.0.0/bin/clang-7' for static analysis
+-- The C compiler identification is GNU 5.4.0
+-- The CXX compiler identification is GNU 5.4.0
+-- Check for working C compiler: /usr/local/clang-7.0.0/libexec/ccc-analyzer
+-- Check for working C compiler: /usr/local/clang-7.0.0/libexec/ccc-analyzer -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/local/clang-7.0.0/libexec/c++-analyzer
+-- Check for working CXX compiler: /usr/local/clang-7.0.0/libexec/c++-analyzer -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- C Compiler: /usr/local/clang-7.0.0/libexec/ccc-analyzer
+-- C++ Compiler: /usr/local/clang-7.0.0/libexec/c++-analyzer
+-- CMAKE_CURRENT_SOURCE_DIR: /home/travis/build
+-- INCLUDE_DIR: /home/travis/build/include
+-- RLITE HEADERS: /home/travis/build/include/rlite/common.h;/home/travis/build/include/rlite/conf.h;/home/travis/build/include/rlite/ctrl.h;/home/travis/build/include/rlite/kernel-msg.h;/home/travis/build/include/rlite/list.h;/home/travis/build/include/rlite/uipcps-helpers.h;/home/travis/build/include/rlite/uipcps-msg.h;/home/travis/build/include/rlite/utils.h;/home/travis/build/include/rlite/version.h;/home/travis/build/include/rlite/wifi.h
+-- Configuring for debug mode
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found version "2.6.1") 
+-- PROTOBUF VERSION 2.6.1
+-- Adding include dir /home/travis/build/build/user/libs to cdap target
+-- Could NOT find SWIG (missing: SWIG_EXECUTABLE SWIG_DIR) 
+-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.5m.so (found version "3.5.2") 
+SWIG not found: Python bindings will not be built
+-- Adding include dir /home/travis/build/build/user/tools to iporinad target
+-- Adding include dir /home/travis/build/build/user/uipcps to uipcp-normal target
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    OPTIMIZE
+
+
+-- Build files have been written to: /home/travis/build/build
+scan-build: Removing directory '/tmp/scan-build-2020-07-15-102642-8547-1' because it contains no reports.
+scan-build: No bugs found.
+Generating IPCP flavours ...
+... flavours generated
+travis_time:end:008e4ddd:start=1594808802647286736,finish=1594808812077366991,duration=9430080255,event=script[0K[32;1mThe command "./configure --debug" exited with 0.[0m
+travis_time:start:17cb0e28[0K$ make
+cd build && scan-build make
+scan-build: Using '/usr/local/clang-7.0.0/bin/clang-7' for static analysis
+make[1]: Entering directory '/home/travis/build/build'
+make[2]: Entering directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+[35m[1mScanning dependencies of target rina-api[0m
+make[3]: Leaving directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+[  1%] [32mBuilding C object user/libs/CMakeFiles/rina-api.dir/utils.c.o[0m
+/home/travis/build/user/libs/utils.c:290:48: warning: Dereference of null pointer (loaded from variable 'str')
+        ret += sizeof(uint16_t) + string_prlen(*str);
+                                               ^~~~
+/home/travis/build/user/libs/utils.c:295:34: warning: Access to field 'len' results in a dereference of a null pointer (loaded from variable 'bf')
+        ret += sizeof(bf->len) + bf->len;
+                                 ^~~~~~~
+/home/travis/build/user/libs/utils.c:483:13: warning: Dereference of null pointer (loaded from variable 'str')
+        if (*str) {
+            ^~~~
+3 warnings generated.
+[  2%] [32mBuilding C object user/libs/CMakeFiles/rina-api.dir/ker-numtables.c.o[0m
+[  4%] [32mBuilding C object user/libs/CMakeFiles/rina-api.dir/uipcps-numtables.c.o[0m
+[  5%] [32mBuilding C object user/libs/CMakeFiles/rina-api.dir/ctrl.c.o[0m
+[  7%] [32mBuilding C object user/libs/CMakeFiles/rina-api.dir/memtrack.c.o[0m
+[  8%] [32m[1mLinking C shared library librina-api.so[0m
+make[3]: Leaving directory '/home/travis/build/build'
+[  8%] Built target rina-api
+make[3]: Entering directory '/home/travis/build/build'
+[35m[1mScanning dependencies of target rlite-conf[0m
+make[3]: Leaving directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+[ 10%] [32mBuilding C object user/libs/CMakeFiles/rlite-conf.dir/conf.c.o[0m
+[ 11%] [32m[1mLinking C shared library librlite-conf.so[0m
+make[3]: Leaving directory '/home/travis/build/build'
+[ 11%] Built target rlite-conf
+make[3]: Entering directory '/home/travis/build/build'
+[ 12%] [34m[1mRunning C++ protocol buffer compiler on CDAP.proto[0m
+[35m[1mScanning dependencies of target cdap[0m
+make[3]: Leaving directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+[ 14%] [32mBuilding CXX object user/libs/CMakeFiles/cdap.dir/cdap.cpp.o[0m
+[ 15%] [32mBuilding CXX object user/libs/CMakeFiles/cdap.dir/CDAP.pb.cc.o[0m
+[ 17%] [32m[1mLinking CXX shared library libcdap.so[0m
+make[3]: Leaving directory '/home/travis/build/build'
+[ 17%] Built target cdap
+make[3]: Entering directory '/home/travis/build/build'
+[35m[1mScanning dependencies of target rlite-raft[0m
+make[3]: Leaving directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+[ 18%] [32mBuilding CXX object user/libs/CMakeFiles/rlite-raft.dir/raft.cpp.o[0m
+[ 20%] [32m[1mLinking CXX static library librlite-raft.a[0m
+make[3]: Leaving directory '/home/travis/build/build'
+[ 20%] Built target rlite-raft
+make[3]: Entering directory '/home/travis/build/build'
+[35m[1mScanning dependencies of target wpa-supplicant[0m
+make[3]: Leaving directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+[ 21%] [32mBuilding C object user/libs/wpa-supplicant/CMakeFiles/wpa-supplicant.dir/os_unix.c.o[0m
+[ 22%] [32mBuilding C object user/libs/wpa-supplicant/CMakeFiles/wpa-supplicant.dir/wpa_ctrl.c.o[0m
+[ 24%] [32m[1mLinking C static library libwpa-supplicant.a[0m
+make[3]: Leaving directory '/home/travis/build/build'
+[ 24%] Built target wpa-supplicant
+make[3]: Entering directory '/home/travis/build/build'
+[35m[1mScanning dependencies of target rlite-wifi[0m
+make[3]: Leaving directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+[ 25%] [32mBuilding C object user/libs/CMakeFiles/rlite-wifi.dir/wifi.c.o[0m
+[ 27%] [32m[1mLinking C static library librlite-wifi.a[0m
+make[3]: Leaving directory '/home/travis/build/build'
+[ 27%] Built target rlite-wifi
+make[3]: Entering directory '/home/travis/build/build'
+[35m[1mScanning dependencies of target cdap-test[0m
+make[3]: Leaving directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+[ 28%] [32mBuilding CXX object user/libs/CMakeFiles/cdap-test.dir/cdap-test.cpp.o[0m
+[ 30%] [32m[1mLinking CXX executable cdap-test[0m
+make[3]: Leaving directory '/home/travis/build/build'
+[ 30%] Built target cdap-test
+make[3]: Entering directory '/home/travis/build/build'
+[35m[1mScanning dependencies of target raft-test[0m
+make[3]: Leaving directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+[ 31%] [32mBuilding CXX object user/libs/CMakeFiles/raft-test.dir/raft-test.cpp.o[0m
+[ 32%] [32m[1mLinking CXX executable raft-test[0m
+make[3]: Leaving directory '/home/travis/build/build'
+[ 32%] Built target raft-test
+make[3]: Entering directory '/home/travis/build/build'
+[35m[1mScanning dependencies of target rlite-ctl[0m
+make[3]: Leaving directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+[ 34%] [32mBuilding C object user/tools/CMakeFiles/rlite-ctl.dir/rlite-ctl.c.o[0m
+/home/travis/build/user/tools/rlite-ctl.c:645:21: warning: Potential leak of memory pointed to by 'arr'
+                    PE("Invalid weight '%s'\n", token);
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:154:22: note: expanded from macro 'PE'
+#define PE(FMT, ...) PRINTFUN2("ERR", FMT, ##__VA_ARGS__)
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:127:5: note: expanded from macro 'PRINTFUN2'
+    DOPRINT("[%s:" LEV "]%s: " FMT, hms_string(), __func__, ##__VA_ARGS__)
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:121:9: note: expanded from macro 'DOPRINT'
+        printf(FMT, ##__VA_ARGS__);                                            \
+        ^~~~~~
+/home/travis/build/user/tools/rlite-ctl.c:645:21: warning: Potential leak of memory pointed to by 'ctmp'
+                    PE("Invalid weight '%s'\n", token);
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:154:22: note: expanded from macro 'PE'
+#define PE(FMT, ...) PRINTFUN2("ERR", FMT, ##__VA_ARGS__)
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:127:5: note: expanded from macro 'PRINTFUN2'
+    DOPRINT("[%s:" LEV "]%s: " FMT, hms_string(), __func__, ##__VA_ARGS__)
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:121:9: note: expanded from macro 'DOPRINT'
+        printf(FMT, ##__VA_ARGS__);                                            \
+        ^~~~~~
+/home/travis/build/user/tools/rlite-ctl.c:718:9: warning: Potential leak of memory pointed to by 'req.ipcp_name'
+        PE("Could not find the IPC process to register\n");
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:154:22: note: expanded from macro 'PE'
+#define PE(FMT, ...) PRINTFUN2("ERR", FMT, ##__VA_ARGS__)
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:127:5: note: expanded from macro 'PRINTFUN2'
+    DOPRINT("[%s:" LEV "]%s: " FMT, hms_string(), __func__, ##__VA_ARGS__)
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:121:9: note: expanded from macro 'DOPRINT'
+        printf(FMT, ##__VA_ARGS__);                                            \
+        ^~~~~~
+/home/travis/build/user/tools/rlite-ctl.c:763:9: warning: Potential leak of memory pointed to by 'req.ipcp_name'
+        PE("Could not find enrolling IPC process\n");
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:154:22: note: expanded from macro 'PE'
+#define PE(FMT, ...) PRINTFUN2("ERR", FMT, ##__VA_ARGS__)
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:127:5: note: expanded from macro 'PRINTFUN2'
+    DOPRINT("[%s:" LEV "]%s: " FMT, hms_string(), __func__, ##__VA_ARGS__)
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:121:9: note: expanded from macro 'DOPRINT'
+        printf(FMT, ##__VA_ARGS__);                                            \
+        ^~~~~~
+/home/travis/build/user/tools/rlite-ctl.c:1100:13: warning: Potential leak of memory pointed to by 'req.ipcp_name'
+            PE("Could not find IPC process %s\n", name);
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:154:22: note: expanded from macro 'PE'
+#define PE(FMT, ...) PRINTFUN2("ERR", FMT, ##__VA_ARGS__)
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:127:5: note: expanded from macro 'PRINTFUN2'
+    DOPRINT("[%s:" LEV "]%s: " FMT, hms_string(), __func__, ##__VA_ARGS__)
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:121:9: note: expanded from macro 'DOPRINT'
+        printf(FMT, ##__VA_ARGS__);                                            \
+        ^~~~~~
+/home/travis/build/user/tools/rlite-ctl.c:1140:13: warning: Potential leak of memory pointed to by 'req.ipcp_name'
+            PE("Could not find IPC process %s\n", name);
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:154:22: note: expanded from macro 'PE'
+#define PE(FMT, ...) PRINTFUN2("ERR", FMT, ##__VA_ARGS__)
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:127:5: note: expanded from macro 'PRINTFUN2'
+    DOPRINT("[%s:" LEV "]%s: " FMT, hms_string(), __func__, ##__VA_ARGS__)
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:121:9: note: expanded from macro 'DOPRINT'
+        printf(FMT, ##__VA_ARGS__);                                            \
+        ^~~~~~
+/home/travis/build/user/tools/rlite-ctl.c:1167:9: warning: Potential leak of memory pointed to by 'req.ipcp_name'
+        PE("Could not find IPC process %s\n", ipcp_name);
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:154:22: note: expanded from macro 'PE'
+#define PE(FMT, ...) PRINTFUN2("ERR", FMT, ##__VA_ARGS__)
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:127:5: note: expanded from macro 'PRINTFUN2'
+    DOPRINT("[%s:" LEV "]%s: " FMT, hms_string(), __func__, ##__VA_ARGS__)
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:121:9: note: expanded from macro 'DOPRINT'
+        printf(FMT, ##__VA_ARGS__);                                            \
+        ^~~~~~
+/home/travis/build/user/tools/rlite-ctl.c:1228:9: warning: Potential leak of memory pointed to by 'req.ipcp_name'
+        PE("Could not find IPC process %s\n", ipcp_name);
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:154:22: note: expanded from macro 'PE'
+#define PE(FMT, ...) PRINTFUN2("ERR", FMT, ##__VA_ARGS__)
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:127:5: note: expanded from macro 'PRINTFUN2'
+    DOPRINT("[%s:" LEV "]%s: " FMT, hms_string(), __func__, ##__VA_ARGS__)
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:121:9: note: expanded from macro 'DOPRINT'
+        printf(FMT, ##__VA_ARGS__);                                            \
+        ^~~~~~
+/home/travis/build/user/tools/rlite-ctl.c:1228:9: warning: Potential leak of memory pointed to by 'req.neigh_name'
+        PE("Could not find IPC process %s\n", ipcp_name);
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:154:22: note: expanded from macro 'PE'
+#define PE(FMT, ...) PRINTFUN2("ERR", FMT, ##__VA_ARGS__)
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:127:5: note: expanded from macro 'PRINTFUN2'
+    DOPRINT("[%s:" LEV "]%s: " FMT, hms_string(), __func__, ##__VA_ARGS__)
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:121:9: note: expanded from macro 'DOPRINT'
+        printf(FMT, ##__VA_ARGS__);                                            \
+        ^~~~~~
+/home/travis/build/user/tools/rlite-ctl.c:1259:9: warning: Potential leak of memory pointed to by 'req.dest_name'
+        PE("Could not find IPC process %s\n", ipcp_name);
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:154:22: note: expanded from macro 'PE'
+#define PE(FMT, ...) PRINTFUN2("ERR", FMT, ##__VA_ARGS__)
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:127:5: note: expanded from macro 'PRINTFUN2'
+    DOPRINT("[%s:" LEV "]%s: " FMT, hms_string(), __func__, ##__VA_ARGS__)
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:121:9: note: expanded from macro 'DOPRINT'
+        printf(FMT, ##__VA_ARGS__);                                            \
+        ^~~~~~
+/home/travis/build/user/tools/rlite-ctl.c:1259:9: warning: Potential leak of memory pointed to by 'req.ipcp_name'
+        PE("Could not find IPC process %s\n", ipcp_name);
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:154:22: note: expanded from macro 'PE'
+#define PE(FMT, ...) PRINTFUN2("ERR", FMT, ##__VA_ARGS__)
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:127:5: note: expanded from macro 'PRINTFUN2'
+    DOPRINT("[%s:" LEV "]%s: " FMT, hms_string(), __func__, ##__VA_ARGS__)
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:121:9: note: expanded from macro 'DOPRINT'
+        printf(FMT, ##__VA_ARGS__);                                            \
+        ^~~~~~
+/home/travis/build/user/tools/rlite-ctl.c:1259:9: warning: Potential leak of memory pointed to by 'req.next_hops'
+        PE("Could not find IPC process %s\n", ipcp_name);
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:154:22: note: expanded from macro 'PE'
+#define PE(FMT, ...) PRINTFUN2("ERR", FMT, ##__VA_ARGS__)
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:127:5: note: expanded from macro 'PRINTFUN2'
+    DOPRINT("[%s:" LEV "]%s: " FMT, hms_string(), __func__, ##__VA_ARGS__)
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:121:9: note: expanded from macro 'DOPRINT'
+        printf(FMT, ##__VA_ARGS__);                                            \
+        ^~~~~~
+/home/travis/build/user/tools/rlite-ctl.c:1322:17: warning: Potential leak of memory pointed to by 'req.ipcp_name'
+                PE("Could not find IPC process %s\n", name);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:154:22: note: expanded from macro 'PE'
+#define PE(FMT, ...) PRINTFUN2("ERR", FMT, ##__VA_ARGS__)
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:127:5: note: expanded from macro 'PRINTFUN2'
+    DOPRINT("[%s:" LEV "]%s: " FMT, hms_string(), __func__, ##__VA_ARGS__)
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:121:9: note: expanded from macro 'DOPRINT'
+        printf(FMT, ##__VA_ARGS__);                                            \
+        ^~~~~~
+/home/travis/build/user/tools/rlite-ctl.c:1348:17: warning: Potential leak of memory pointed to by 'req.ipcp_name'
+        return -1;
+                ^
+/home/travis/build/user/tools/rlite-ctl.c:1389:13: warning: Potential leak of memory pointed to by 'req.ipcp_name'
+            PE("Could not find IPC process %s\n", name);
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:154:22: note: expanded from macro 'PE'
+#define PE(FMT, ...) PRINTFUN2("ERR", FMT, ##__VA_ARGS__)
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:127:5: note: expanded from macro 'PRINTFUN2'
+    DOPRINT("[%s:" LEV "]%s: " FMT, hms_string(), __func__, ##__VA_ARGS__)
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:121:9: note: expanded from macro 'DOPRINT'
+        printf(FMT, ##__VA_ARGS__);                                            \
+        ^~~~~~
+/home/travis/build/user/tools/rlite-ctl.c:1439:13: warning: Potential leak of memory pointed to by 'req.ipcp_name'
+            PE("Could not find IPC process %s\n", name);
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:154:22: note: expanded from macro 'PE'
+#define PE(FMT, ...) PRINTFUN2("ERR", FMT, ##__VA_ARGS__)
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:127:5: note: expanded from macro 'PRINTFUN2'
+    DOPRINT("[%s:" LEV "]%s: " FMT, hms_string(), __func__, ##__VA_ARGS__)
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/include/rlite/utils.h:121:9: note: expanded from macro 'DOPRINT'
+        printf(FMT, ##__VA_ARGS__);                                            \
+        ^~~~~~
+16 warnings generated.
+[ 35%] [32m[1mLinking C executable rlite-ctl[0m
+make[3]: Leaving directory '/home/travis/build/build'
+[ 35%] Built target rlite-ctl
+make[3]: Entering directory '/home/travis/build/build'
+[35m[1mScanning dependencies of target rinaperf[0m
+make[3]: Leaving directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+[ 37%] [32mBuilding C object user/tools/CMakeFiles/rinaperf.dir/rinaperf.c.o[0m
+[ 38%] [32m[1mLinking C executable rinaperf[0m
+make[3]: Leaving directory '/home/travis/build/build'
+[ 38%] Built target rinaperf
+make[3]: Entering directory '/home/travis/build/build'
+[35m[1mScanning dependencies of target fdfwd[0m
+make[3]: Leaving directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+[ 40%] [32mBuilding CXX object user/tools/CMakeFiles/fdfwd.dir/fdfwd.cpp.o[0m
+[ 41%] [32m[1mLinking CXX static library libfdfwd.a[0m
+make[3]: Leaving directory '/home/travis/build/build'
+[ 41%] Built target fdfwd
+make[3]: Entering directory '/home/travis/build/build'
+[35m[1mScanning dependencies of target rina-gw[0m
+make[3]: Leaving directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+[ 42%] [32mBuilding CXX object user/tools/CMakeFiles/rina-gw.dir/rina-gw.cpp.o[0m
+[ 44%] [32m[1mLinking CXX executable rina-gw[0m
+make[3]: Leaving directory '/home/travis/build/build'
+[ 44%] Built target rina-gw
+make[3]: Entering directory '/home/travis/build/build'
+[35m[1mScanning dependencies of target test-wifi[0m
+make[3]: Leaving directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+[ 45%] [32mBuilding C object user/tools/CMakeFiles/test-wifi.dir/test-wifi.c.o[0m
+[ 47%] [32m[1mLinking C executable test-wifi[0m
+make[3]: Leaving directory '/home/travis/build/build'
+[ 47%] Built target test-wifi
+make[3]: Entering directory '/home/travis/build/build'
+[35m[1mScanning dependencies of target rina-echo-async[0m
+make[3]: Leaving directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+[ 48%] [32mBuilding C object user/tools/CMakeFiles/rina-echo-async.dir/rina-echo-async.c.o[0m
+/home/travis/build/user/tools/rina-echo-async.c:552:5: warning: Potential leak of memory pointed to by 'rea.dif_name'
+    return client(&rea);
+    ^~~~~~~~~~~~~~~~~~~
+1 warning generated.
+[ 50%] [32m[1mLinking C executable rina-echo-async[0m
+make[3]: Leaving directory '/home/travis/build/build'
+[ 50%] Built target rina-echo-async
+make[3]: Entering directory '/home/travis/build/build'
+[ 51%] [34m[1mRunning C++ protocol buffer compiler on iporina.proto[0m
+[35m[1mScanning dependencies of target iporinad[0m
+make[3]: Leaving directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+[ 52%] [32mBuilding CXX object user/tools/CMakeFiles/iporinad.dir/iporinad.cpp.o[0m
+/home/travis/build/user/tools/iporinad.cpp:646:21: warning: Potential leak of memory pointed to by 'argv'
+            return -1;
+                    ^
+/home/travis/build/user/tools/iporinad.cpp:648:9: warning: Null pointer passed as an argument to a 'nonnull' parameter
+        execvp(argv[0], argv);
+        ^~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+[ 54%] [32mBuilding CXX object user/tools/CMakeFiles/iporinad.dir/iporina.pb.cc.o[0m
+[ 55%] [32m[1mLinking CXX executable iporinad[0m
+make[3]: Leaving directory '/home/travis/build/build'
+[ 55%] Built target iporinad
+make[3]: Entering directory '/home/travis/build/build'
+[35m[1mScanning dependencies of target rinacat[0m
+make[3]: Leaving directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+[ 57%] [32mBuilding C object user/tools/rinacat/CMakeFiles/rinacat.dir/rinacat.c.o[0m
+/home/travis/build/user/tools/rinacat/rinacat.c:292:9: warning: Potential leak of memory pointed to by 'commandname'
+    if (this_api)
+        ^~~~~~~~
+/home/travis/build/user/tools/rinacat/rinacat.c:319:43: warning: Potential memory leak
+        setenv("RINACAT_l", (listenflag ? "l" : ""), 1);
+                                          ^~~
+/home/travis/build/user/tools/rinacat/rinacat.c:323:23: warning: Potential memory leak
+                    ? "d"
+                      ^~~
+/home/travis/build/user/tools/rinacat/rinacat.c:478:11: warning: Call to function 'vfork' is insecure as it can lead to denial of service situations in the parent process. Replace calls to vfork with calls to the safer 'posix_spawn' function
+    pid = vfork();
+          ^~~~~
+/home/travis/build/user/tools/rinacat/rinacat.c:485:9: warning: This function call is prohibited after a successful vfork
+        close(0);
+        ^~~~~~~~
+/home/travis/build/user/tools/rinacat/rinacat.c:725:9: warning: 3rd function call argument is an uninitialized value
+        V3VERBOSE("Waiting for launched command, pid %d, to complete.\n", pid);
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/user/tools/rinacat/rinacat.c:75:9: note: expanded from macro 'V3VERBOSE'
+        fprintf(stderr, args);                                                 \
+        ^~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/user/tools/rinacat/rinacat.c:726:9: warning: 1st function call argument is an uninitialized value
+        waitforpid(pid);
+        ^~~~~~~~~~~~~~~
+/home/travis/build/user/tools/rinacat/rinacat.c:826:39: warning: Null pointer passed as an argument to a 'nonnull' parameter
+            EMPTYSTRING(other_apn) || strcmp(incomingapn, other_apn) == 0) {
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/user/tools/rinacat/rinacat.c:826:39: warning: Use of memory after it is freed
+            EMPTYSTRING(other_apn) || strcmp(incomingapn, other_apn) == 0) {
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+9 warnings generated.
+[ 58%] [32m[1mLinking C executable rinacat[0m
+make[3]: Leaving directory '/home/travis/build/build'
+[ 58%] Built target rinacat
+make[3]: Entering directory '/home/travis/build/build'
+[ 60%] [34m[1mRunning C++ protocol buffer compiler on /home/travis/build/user/uipcps/uipcp-gpb/Raft.proto[0m
+[ 61%] [34m[1mRunning C++ protocol buffer compiler on /home/travis/build/user/uipcps/uipcp-gpb/BaseRIB.proto[0m
+[35m[1mScanning dependencies of target uipcp-normal[0m
+make[3]: Leaving directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+[ 62%] [32mBuilding CXX object user/uipcps/CMakeFiles/uipcp-normal.dir/uipcp-normal.cpp.o[0m
+[ 64%] [32mBuilding CXX object user/uipcps/CMakeFiles/uipcp-normal.dir/uipcp-normal-enroll.cpp.o[0m
+[ 65%] [32mBuilding CXX object user/uipcps/CMakeFiles/uipcp-normal.dir/uipcp-normal-flow-alloc.cpp.o[0m
+[ 67%] [32mBuilding CXX object user/uipcps/CMakeFiles/uipcp-normal.dir/uipcp-normal-appl-reg.cpp.o[0m
+[ 68%] [32mBuilding CXX object user/uipcps/CMakeFiles/uipcp-normal.dir/uipcp-normal-lower-flows.cpp.o[0m
+[ 70%] [32mBuilding CXX object user/uipcps/CMakeFiles/uipcp-normal.dir/uipcp-normal-lfdb.cpp.o[0m
+[ 71%] [32mBuilding CXX object user/uipcps/CMakeFiles/uipcp-normal.dir/uipcp-normal-addr-alloc.cpp.o[0m
+[ 72%] [32mBuilding CXX object user/uipcps/CMakeFiles/uipcp-normal.dir/uipcp-normal-ceft.cpp.o[0m
+[ 74%] [32mBuilding CXX object user/uipcps/CMakeFiles/uipcp-normal.dir/uipcp-normal-qos.cpp.o[0m
+[ 75%] [32mBuilding CXX object user/uipcps/CMakeFiles/uipcp-normal.dir/BaseRIB.pb.cc.o[0m
+[ 77%] [32mBuilding CXX object user/uipcps/CMakeFiles/uipcp-normal.dir/Raft.pb.cc.o[0m
+[ 78%] [32m[1mLinking CXX static library libuipcp-normal.a[0m
+make[3]: Leaving directory '/home/travis/build/build'
+[ 78%] Built target uipcp-normal
+make[3]: Entering directory '/home/travis/build/build'
+[35m[1mScanning dependencies of target policy-deps-test[0m
+make[3]: Leaving directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+[ 80%] [32mBuilding CXX object user/uipcps/CMakeFiles/policy-deps-test.dir/policy-deps-test.cpp.o[0m
+[ 81%] [32mBuilding C object user/uipcps/CMakeFiles/policy-deps-test.dir/uipcp-container.c.o[0m
+[ 82%] [32mBuilding C object user/uipcps/CMakeFiles/policy-deps-test.dir/uipcp-unix.c.o[0m
+[ 84%] [32mBuilding C object user/uipcps/CMakeFiles/policy-deps-test.dir/uipcp-shim-tcp4.c.o[0m
+[ 85%] [32mBuilding C object user/uipcps/CMakeFiles/policy-deps-test.dir/uipcp-shim-udp4.c.o[0m
+/home/travis/build/user/uipcps/uipcp-shim-udp4.c:349:9: warning: 1st function call argument is an uninitialized value
+        rl_free(local_appl, RL_MT_SHIMDATA);
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/user/uipcps/uipcp-shim-udp4.c:350:9: warning: 1st function call argument is an uninitialized value
+        rl_free(remote_appl, RL_MT_SHIMDATA);
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+[ 87%] [32mBuilding C object user/uipcps/CMakeFiles/policy-deps-test.dir/uipcp-shim-wifi.c.o[0m
+[ 88%] [32m[1mLinking CXX executable policy-deps-test[0m
+make[3]: Leaving directory '/home/travis/build/build'
+[ 88%] Built target policy-deps-test
+make[3]: Entering directory '/home/travis/build/build'
+[35m[1mScanning dependencies of target rlite-uipcps[0m
+make[3]: Leaving directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+[ 90%] [32mBuilding C object user/uipcps/CMakeFiles/rlite-uipcps.dir/uipcp-container.c.o[0m
+[ 91%] [32mBuilding C object user/uipcps/CMakeFiles/rlite-uipcps.dir/uipcp-unix.c.o[0m
+[ 92%] [32mBuilding C object user/uipcps/CMakeFiles/rlite-uipcps.dir/uipcp-shim-tcp4.c.o[0m
+[ 94%] [32mBuilding C object user/uipcps/CMakeFiles/rlite-uipcps.dir/uipcp-shim-udp4.c.o[0m
+/home/travis/build/user/uipcps/uipcp-shim-udp4.c:349:9: warning: 1st function call argument is an uninitialized value
+        rl_free(local_appl, RL_MT_SHIMDATA);
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/travis/build/user/uipcps/uipcp-shim-udp4.c:350:9: warning: 1st function call argument is an uninitialized value
+        rl_free(remote_appl, RL_MT_SHIMDATA);
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+[ 95%] [32mBuilding C object user/uipcps/CMakeFiles/rlite-uipcps.dir/uipcp-shim-wifi.c.o[0m
+[ 97%] [32m[1mLinking CXX executable rlite-uipcps[0m
+make[3]: Leaving directory '/home/travis/build/build'
+[ 97%] Built target rlite-uipcps
+make[3]: Entering directory '/home/travis/build/build'
+[35m[1mScanning dependencies of target lfdb-test[0m
+make[3]: Leaving directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+[ 98%] [32mBuilding CXX object user/uipcps/CMakeFiles/lfdb-test.dir/lfdb-test.cpp.o[0m
+[100%] [32m[1mLinking CXX executable lfdb-test[0m
+make[3]: Leaving directory '/home/travis/build/build'
+[100%] Built target lfdb-test
+make[2]: Leaving directory '/home/travis/build/build'
+make[1]: Leaving directory '/home/travis/build/build'
+scan-build: 33 bugs found.
+scan-build: Run 'scan-view /tmp/scan-build-2020-07-15-102652-9310-1' to examine bug reports.
+scan-build make -C /lib/modules/4.4.0-112-generic/build M=/home/travis/build/kernel PWD=/home/travis/build/kernel \
+		WITH_SHIM_UDP4=y \
+		WITH_SHIM_TCP4=y \
+		modules
+scan-build: Using '/usr/local/clang-7.0.0/bin/clang-7' for static analysis
+make[1]: Entering directory '/usr/src/linux-headers-4.4.0-112-generic'
+  CC [M]  /home/travis/build/kernel/ctrl-dev.o
+In file included from /home/travis/build/kernel/ctrl-dev.c:25:
+In file included from /home/travis/build/kernel/rlite-kernel.h:30:
+In file included from include/linux/mutex.h:18:
+In file included from include/linux/atomic.h:4:
+In file included from ./arch/x86/include/asm/atomic.h:6:
+In file included from ./arch/x86/include/asm/processor.h:20:
+In file included from ./arch/x86/include/asm/msr.h:166:
+./arch/x86/include/asm/paravirt.h:701:2: warning: Assigned value is garbage or undefined
+        PVOP_VCALLEE1(pv_lock_ops.queued_spin_unlock, lock);
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./arch/x86/include/asm/paravirt_types.h:639:2: note: expanded from macro 'PVOP_VCALLEE1'
+        __PVOP_VCALLEESAVE(op, "", "", PVOP_CALL_ARG1(arg1))
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./arch/x86/include/asm/paravirt_types.h:614:2: note: expanded from macro '__PVOP_VCALLEESAVE'
+        ____PVOP_VCALL(op.func, CLBR_RET_REG,                           \
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./arch/x86/include/asm/paravirt_types.h:596:3: note: expanded from macro '____PVOP_VCALL'
+                PVOP_VCALL_ARGS;                                        \
+                ^~~~~~~~~~~~~~~
+./arch/x86/include/asm/paravirt_types.h:524:16: note: expanded from macro 'PVOP_VCALL_ARGS'
+        unsigned long __edi = __edi, __esi = __esi,     \
+                      ^~~~~   ~~~~~
+/home/travis/build/kernel/ctrl-dev.c:2829:5: warning: Value stored to 'ipcp_id' is never read
+    ipcp_id = ipcp_entry->id;
+    ^         ~~~~~~~~~~~~~~
+2 warnings generated.
+  CC [M]  /home/travis/build/kernel/io-dev.o
+  CC [M]  /home/travis/build/kernel/utils.o
+/home/travis/build/kernel/utils.c:290:48: warning: Dereference of null pointer (loaded from variable 'str')
+        ret += sizeof(uint16_t) + string_prlen(*str);
+                                               ^~~~
+/home/travis/build/kernel/utils.c:295:34: warning: Access to field 'len' results in a dereference of a null pointer (loaded from variable 'bf')
+        ret += sizeof(bf->len) + bf->len;
+                                 ^~~~~~~
+/home/travis/build/kernel/utils.c:483:13: warning: Dereference of null pointer (loaded from variable 'str')
+        if (*str) {
+            ^~~~
+3 warnings generated.
+  CC [M]  /home/travis/build/kernel/ker-numtables.o
+  CC [M]  /home/travis/build/kernel/bufs.o
+  CC [M]  /home/travis/build/kernel/normal-common.o
+  CC [M]  /home/travis/build/kernel/memtrack.o
+  LD [M]  /home/travis/build/kernel/rlite.o
+  CC [M]  /home/travis/build/kernel/shim-loopback.o
+  LD [M]  /home/travis/build/kernel/rlite-shim-loopback.o
+  CC [M]  /home/travis/build/kernel/shim-eth.o
+In file included from /home/travis/build/kernel/shim-eth.c:37:
+In file included from include/linux/netdevice.h:42:
+In file included from include/linux/ethtool.h:17:
+In file included from include/uapi/linux/ethtool.h:17:
+In file included from include/linux/if_ether.h:23:
+include/linux/skbuff.h:1594:2: warning: 2nd function call argument is an uninitialized value
+        __skb_insert(newsk, next->prev, next, list);
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+  LD [M]  /home/travis/build/kernel/rlite-shim-eth.o
+  CC [M]  /home/travis/build/kernel/normal.o
+  LD [M]  /home/travis/build/kernel/rlite-normal.o
+  CC [M]  /home/travis/build/kernel/shim-udp4.o
+  LD [M]  /home/travis/build/kernel/rlite-shim-udp4.o
+  CC [M]  /home/travis/build/kernel/shim-tcp4.o
+  LD [M]  /home/travis/build/kernel/rlite-shim-tcp4.o
+  CC [M]  /home/travis/build/kernel/normal-tiny.o
+  LD [M]  /home/travis/build/kernel/rlite-normal-tiny.o
+  Building modules, stage 2.
+  MODPOST 7 modules
+  CC      /home/travis/build/kernel/rlite-normal-tiny.mod.o
+  LD [M]  /home/travis/build/kernel/rlite-normal-tiny.ko
+  CC      /home/travis/build/kernel/rlite-normal.mod.o
+  LD [M]  /home/travis/build/kernel/rlite-normal.ko
+  CC      /home/travis/build/kernel/rlite-shim-eth.mod.o
+  LD [M]  /home/travis/build/kernel/rlite-shim-eth.ko
+  CC      /home/travis/build/kernel/rlite-shim-loopback.mod.o
+  LD [M]  /home/travis/build/kernel/rlite-shim-loopback.ko
+  CC      /home/travis/build/kernel/rlite-shim-tcp4.mod.o
+  LD [M]  /home/travis/build/kernel/rlite-shim-tcp4.ko
+  CC      /home/travis/build/kernel/rlite-shim-udp4.mod.o
+  LD [M]  /home/travis/build/kernel/rlite-shim-udp4.ko
+  CC      /home/travis/build/kernel/rlite.mod.o
+  LD [M]  /home/travis/build/kernel/rlite.ko
+make[1]: Leaving directory '/usr/src/linux-headers-4.4.0-112-generic'
+scan-build: 6 bugs found.
+scan-build: Run 'scan-view /tmp/scan-build-2020-07-15-103340-10139-1' to examine bug reports.
+travis_time:end:17cb0e28:start=1594808812086801151,finish=1594809294657280537,duration=482570479386,event=script[0K[32;1mThe command "make" exited with 0.[0m
+travis_time:start:14dbc490[0K$ make test
+cd build && scan-build make
+scan-build: Using '/usr/local/clang-7.0.0/bin/clang-7' for static analysis
+make[1]: Entering directory '/home/travis/build/build'
+make[2]: Entering directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[  8%] Built target rina-api
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 11%] Built target rlite-conf
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 17%] Built target cdap
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 20%] Built target rlite-raft
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 24%] Built target wpa-supplicant
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 27%] Built target rlite-wifi
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 30%] Built target cdap-test
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 32%] Built target raft-test
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 35%] Built target rlite-ctl
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 38%] Built target rinaperf
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 41%] Built target fdfwd
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 44%] Built target rina-gw
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 47%] Built target test-wifi
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 50%] Built target rina-echo-async
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 55%] Built target iporinad
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 58%] Built target rinacat
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 78%] Built target uipcp-normal
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 88%] Built target policy-deps-test
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 97%] Built target rlite-uipcps
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[100%] Built target lfdb-test
+make[2]: Leaving directory '/home/travis/build/build'
+make[1]: Leaving directory '/home/travis/build/build'
+scan-build: Removing directory '/tmp/scan-build-2020-07-15-103454-11056-1' because it contains no reports.
+scan-build: No bugs found.
+cd build && make test
+make[1]: Entering directory '/home/travis/build/build'
+[36mRunning tests...[0m
+Test project /home/travis/build/build
+    Start 1: raft
+1/4 Test #1: raft .............................   Passed    0.18 sec
+    Start 2: cdap
+2/4 Test #2: cdap .............................   Passed    0.40 sec
+    Start 3: lfdb
+3/4 Test #3: lfdb .............................   Passed    1.41 sec
+    Start 4: policy-deps
+4/4 Test #4: policy-deps ......................   Passed    1.41 sec
+
+100% tests passed, 0 tests failed out of 4
+
+Total Test time (real) =   3.42 sec
+make[1]: Leaving directory '/home/travis/build/build'
+travis_time:end:14dbc490:start=1594809294666921470,finish=1594809298677207473,duration=4010286003,event=script[0K[32;1mThe command "make test" exited with 0.[0m
+travis_time:start:0a493760[0K$ sudo make install
+cd build && make install
+make[1]: Entering directory '/home/travis/build/build'
+make[2]: Entering directory '/home/travis/build/build'
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[  8%] Built target rina-api
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 11%] Built target rlite-conf
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 17%] Built target cdap
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 20%] Built target rlite-raft
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 24%] Built target wpa-supplicant
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 27%] Built target rlite-wifi
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 30%] Built target cdap-test
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 32%] Built target raft-test
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 35%] Built target rlite-ctl
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 38%] Built target rinaperf
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 41%] Built target fdfwd
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 44%] Built target rina-gw
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 47%] Built target test-wifi
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 50%] Built target rina-echo-async
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 55%] Built target iporinad
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 58%] Built target rinacat
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 78%] Built target uipcp-normal
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 88%] Built target policy-deps-test
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[ 97%] Built target rlite-uipcps
+make[3]: Entering directory '/home/travis/build/build'
+make[3]: Leaving directory '/home/travis/build/build'
+[100%] Built target lfdb-test
+make[2]: Leaving directory '/home/travis/build/build'
+[36mInstall the project...[0m
+-- Install configuration: "Debug"
+-- Up-to-date: /usr/include/rlite/common.h
+-- Up-to-date: /usr/include/rlite/conf.h
+-- Up-to-date: /usr/include/rlite/ctrl.h
+-- Up-to-date: /usr/include/rlite/kernel-msg.h
+-- Up-to-date: /usr/include/rlite/list.h
+-- Up-to-date: /usr/include/rlite/uipcps-helpers.h
+-- Up-to-date: /usr/include/rlite/uipcps-msg.h
+-- Up-to-date: /usr/include/rlite/utils.h
+-- Installing: /usr/include/rlite/version.h
+-- Up-to-date: /usr/include/rlite/wifi.h
+-- Up-to-date: /usr/include/rina/cdap.hpp
+-- Up-to-date: /usr/include/rina/api.h
+-- Up-to-date: /etc/bash_completion.d/rlite-ctl
+-- Installing: /usr/lib/librina-api.so
+-- Installing: /usr/lib/libcdap.so
+-- Set runtime path of "/usr/lib/libcdap.so" to ""
+-- Installing: /usr/lib/librlite-conf.so
+-- Set runtime path of "/usr/lib/librlite-conf.so" to ""
+-- Installing: /usr/include/rlite/CDAP.pb.h
+-- Installing: /usr/bin/rinaperf
+-- Set runtime path of "/usr/bin/rinaperf" to ""
+-- Installing: /usr/bin/rlite-ctl
+-- Set runtime path of "/usr/bin/rlite-ctl" to ""
+-- Installing: /usr/bin/rina-gw
+-- Set runtime path of "/usr/bin/rina-gw" to ""
+-- Installing: /usr/bin/rina-echo-async
+-- Set runtime path of "/usr/bin/rina-echo-async" to ""
+-- Installing: /usr/bin/iporinad
+-- Set runtime path of "/usr/bin/iporinad" to ""
+-- Up-to-date: /etc/rina/rina-gw.conf
+-- Up-to-date: /etc/rina/iporinad.conf
+-- Up-to-date: /etc/rina/initscript
+-- Up-to-date: /usr/bin/inet-toy
+-- Up-to-date: /usr/bin/rina-toy
+-- Up-to-date: /usr/bin/rlite-node-config
+-- Installing: /usr/bin/rinacat
+-- Set runtime path of "/usr/bin/rinacat" to ""
+-- Installing: /usr/bin/rlite-uipcps
+-- Set runtime path of "/usr/bin/rlite-uipcps" to ""
+-- Up-to-date: /etc/rina/shim-tcp4-dir
+-- Up-to-date: /usr/bin/rlite-rand-clients
+make[1]: Leaving directory '/home/travis/build/build'
+make -C /lib/modules/4.4.0-112-generic/build INSTALL_MOD_PATH=/ M=/home/travis/build/kernel modules_install
+make[1]: Entering directory '/usr/src/linux-headers-4.4.0-112-generic'
+  INSTALL /home/travis/build/kernel/rlite-normal-tiny.ko
+At main.c:222:
+- SSL error:02001002:system library:fopen:No such file or directory: bss_file.c:175
+- SSL error:2006D080:BIO routines:BIO_new_file:no such file: bss_file.c:178
+sign-file: certs/signing_key.pem: No such file or directory
+  INSTALL /home/travis/build/kernel/rlite-normal.ko
+At main.c:222:
+- SSL error:02001002:system library:fopen:No such file or directory: bss_file.c:175
+- SSL error:2006D080:BIO routines:BIO_new_file:no such file: bss_file.c:178
+sign-file: certs/signing_key.pem: No such file or directory
+  INSTALL /home/travis/build/kernel/rlite-shim-eth.ko
+At main.c:222:
+- SSL error:02001002:system library:fopen:No such file or directory: bss_file.c:175
+- SSL error:2006D080:BIO routines:BIO_new_file:no such file: bss_file.c:178
+sign-file: certs/signing_key.pem: No such file or directory
+  INSTALL /home/travis/build/kernel/rlite-shim-loopback.ko
+At main.c:222:
+- SSL error:02001002:system library:fopen:No such file or directory: bss_file.c:175
+- SSL error:2006D080:BIO routines:BIO_new_file:no such file: bss_file.c:178
+sign-file: certs/signing_key.pem: No such file or directory
+  INSTALL /home/travis/build/kernel/rlite-shim-tcp4.ko
+At main.c:222:
+- SSL error:02001002:system library:fopen:No such file or directory: bss_file.c:175
+- SSL error:2006D080:BIO routines:BIO_new_file:no such file: bss_file.c:178
+sign-file: certs/signing_key.pem: No such file or directory
+  INSTALL /home/travis/build/kernel/rlite-shim-udp4.ko
+At main.c:222:
+- SSL error:02001002:system library:fopen:No such file or directory: bss_file.c:175
+- SSL error:2006D080:BIO routines:BIO_new_file:no such file: bss_file.c:178
+sign-file: certs/signing_key.pem: No such file or directory
+  INSTALL /home/travis/build/kernel/rlite.ko
+At main.c:222:
+- SSL error:02001002:system library:fopen:No such file or directory: bss_file.c:175
+- SSL error:2006D080:BIO routines:BIO_new_file:no such file: bss_file.c:178
+sign-file: certs/signing_key.pem: No such file or directory
+  DEPMOD  4.4.0-112-generic
+make[1]: Leaving directory '/usr/src/linux-headers-4.4.0-112-generic'
+travis_time:end:0a493760:start=1594809298686461276,finish=1594809300438512296,duration=1752051020,event=script[0K[32;1mThe command "sudo make install" exited with 0.[0m
+travis_time:start:12d874dc[0K$ sudo make depmod
+make -C /lib/modules/4.4.0-112-generic/build INSTALL_MOD_PATH=/ M=/home/travis/build/kernel modules_install
+make[1]: Entering directory '/usr/src/linux-headers-4.4.0-112-generic'
+  INSTALL /home/travis/build/kernel/rlite-normal-tiny.ko
+At main.c:222:
+- SSL error:02001002:system library:fopen:No such file or directory: bss_file.c:175
+- SSL error:2006D080:BIO routines:BIO_new_file:no such file: bss_file.c:178
+sign-file: certs/signing_key.pem: No such file or directory
+  INSTALL /home/travis/build/kernel/rlite-normal.ko
+At main.c:222:
+- SSL error:02001002:system library:fopen:No such file or directory: bss_file.c:175
+- SSL error:2006D080:BIO routines:BIO_new_file:no such file: bss_file.c:178
+sign-file: certs/signing_key.pem: No such file or directory
+  INSTALL /home/travis/build/kernel/rlite-shim-eth.ko
+At main.c:222:
+- SSL error:02001002:system library:fopen:No such file or directory: bss_file.c:175
+- SSL error:2006D080:BIO routines:BIO_new_file:no such file: bss_file.c:178
+sign-file: certs/signing_key.pem: No such file or directory
+  INSTALL /home/travis/build/kernel/rlite-shim-loopback.ko
+At main.c:222:
+- SSL error:02001002:system library:fopen:No such file or directory: bss_file.c:175
+- SSL error:2006D080:BIO routines:BIO_new_file:no such file: bss_file.c:178
+sign-file: certs/signing_key.pem: No such file or directory
+  INSTALL /home/travis/build/kernel/rlite-shim-tcp4.ko
+At main.c:222:
+- SSL error:02001002:system library:fopen:No such file or directory: bss_file.c:175
+- SSL error:2006D080:BIO routines:BIO_new_file:no such file: bss_file.c:178
+sign-file: certs/signing_key.pem: No such file or directory
+  INSTALL /home/travis/build/kernel/rlite-shim-udp4.ko
+At main.c:222:
+- SSL error:02001002:system library:fopen:No such file or directory: bss_file.c:175
+- SSL error:2006D080:BIO routines:BIO_new_file:no such file: bss_file.c:178
+sign-file: certs/signing_key.pem: No such file or directory
+  INSTALL /home/travis/build/kernel/rlite.ko
+At main.c:222:
+- SSL error:02001002:system library:fopen:No such file or directory: bss_file.c:175
+- SSL error:2006D080:BIO routines:BIO_new_file:no such file: bss_file.c:178
+sign-file: certs/signing_key.pem: No such file or directory
+  DEPMOD  4.4.0-112-generic
+make[1]: Leaving directory '/usr/src/linux-headers-4.4.0-112-generic'
+depmod -b / -a
+depmod: WARNING: could not open //lib/modules/4.4.0-112-generic/modules.order: No such file or directory
+depmod: WARNING: could not open //lib/modules/4.4.0-112-generic/modules.builtin: No such file or directory
+travis_time:end:12d874dc:start=1594809300446712364,finish=1594809301762549758,duration=1315837394,event=script[0K[32;1mThe command "sudo make depmod" exited with 0.[0m
+travis_time:start:06bc0439[0K$ sudo make intest
+tests/run-integration-tests.sh
+[0;33m>>> Running integration test [0;36m"tests/integration/0001-no-ipcps.sh"[0m
+modprobe: ERROR: ../libkmod/libkmod.c:514 lookup_builtin_file() could not open builtin file '/lib/modules/4.4.0-112-generic/modules.builtin.bin'
+modprobe: ERROR: ../libkmod/libkmod.c:514 lookup_builtin_file() could not open builtin file '/lib/modules/4.4.0-112-generic/modules.builtin.bin'
+modprobe: ERROR: could not insert 'rlite_normal': Operation not permitted
+[0;31m>>> FAILED TO PREPARE TEST ENVIRONMENT[0m
+Makefile:52: recipe for target 'intest' failed
+make: *** [intest] Error 1
+travis_time:end:06bc0439:start=1594809301770153432,finish=1594809301818818188,duration=48664756,event=script[0K[31;1mThe command "sudo make intest" exited with 2.[0m
+
+
+Done. Your build exited with 1.

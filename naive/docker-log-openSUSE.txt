@@ -1,0 +1,317 @@
+travis_time:start:042554b5[0Ktravis_time:end:042554b5:start=1593426902428017442,finish=1593426902887142418,duration=459124976,event=no_world_writable_dirs[0Ktravis_time:start:09dc9bbb[0Ktravis_time:end:09dc9bbb:start=1593426902896616894,finish=1593426902903428462,duration=6811568,event=check_unsupported[0Ktravis_time:start:0895591f[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: c
+Build dist: xenial
+Build id: ''
+Job id: ''
+Runtime kernel version: 4.4.0-112-generic
+[34m[1mBuild image provisioning date and time[0m
+Thu May 23 15:30:39 UTC 2019
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 16.04.6 LTS
+Release:	16.04
+Codename:	xenial
+[34m[1mSystemd Version[0m
+systemd 229
+[34m[1mCookbooks Version[0m
+5dab6d6 https://github.com/travis-ci/travis-cookbooks/tree/5dab6d6
+[34m[1mgit version[0m
+git version 2.21.0
+[34m[1mbash version[0m
+GNU bash, version 4.3.48(1)-release (x86_64-pc-linux-gnu)
+[34m[1mgcc version[0m
+gcc (Ubuntu 5.4.0-6ubuntu1~16.04.11) 5.4.0 20160609
+[34m[1mdocker version[0m
+Client:
+ Version:           18.06.1-ce
+ API version:       1.38
+ Go version:        go1.10.3
+ Git commit:        e68fc7a
+ Built:             Tue Aug 21 17:20:43 2018
+ OS/Arch:           linux/amd64
+ Experimental:      false
+[34m[1mclang version[0m
+clang version 7.0.0 (tags/RELEASE_700/final)
+[34m[1mjq version[0m
+jq-1.5
+[34m[1mbats version[0m
+Bats 0.4.0
+[34m[1mshellcheck version[0m
+0.6.0
+[34m[1mshfmt version[0m
+v2.6.3
+[34m[1mccache version[0m
+3.2.4
+[34m[1mcmake version[0m
+cmake version 3.12.4
+[34m[1mheroku version[0m
+heroku/7.24.4 linux-x64 node-v11.14.0
+[34m[1mimagemagick version[0m
+Version: ImageMagick 6.8.9-9 Q16 x86_64 2018-09-28 http://www.imagemagick.org
+[34m[1mmd5deep version[0m
+4.4
+[34m[1mmercurial version[0m
+version 4.8
+[34m[1mmysql version[0m
+mysql  Ver 14.14 Distrib 5.7.26, for Linux (x86_64) using  EditLine wrapper
+[34m[1mopenssl version[0m
+OpenSSL 1.0.2g  1 Mar 2016
+[34m[1mpacker version[0m
+1.3.3
+[34m[1mpostgresql client version[0m
+psql (PostgreSQL) 10.8 (Ubuntu 10.8-1.pgdg16.04+1)
+[34m[1mragel version[0m
+Ragel State Machine Compiler version 6.8 Feb 2013
+[34m[1msudo version[0m
+1.8.16
+[34m[1mgzip version[0m
+gzip 1.6
+[34m[1mzip version[0m
+Zip 3.0
+[34m[1mvim version[0m
+VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Nov 24 2016 16:44:48)
+[34m[1miptables version[0m
+iptables v1.6.0
+[34m[1mcurl version[0m
+curl 7.47.0 (x86_64-pc-linux-gnu) libcurl/7.47.0 GnuTLS/3.4.10 zlib/1.2.8 libidn/1.32 librtmp/2.3
+[34m[1mwget version[0m
+GNU Wget 1.17.1 built on linux-gnu.
+[34m[1mrsync version[0m
+rsync  version 3.1.1  protocol version 31
+[34m[1mgimme version[0m
+v1.5.3
+[34m[1mnvm version[0m
+0.34.0
+[34m[1mperlbrew version[0m
+/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.86
+[34m[1mphpenv version[0m
+rbenv 1.1.2-2-g4e92322
+[34m[1mrvm version[0m
+rvm 1.29.8 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+[34m[1mdefault ruby version[0m
+ruby 2.5.3p105 (2018-10-18 revision 65156) [x86_64-linux]
+[34m[1mCouchDB version[0m
+couchdb 1.6.1
+[34m[1mElasticSearch version[0m
+5.5.0
+[34m[1mInstalled Firefox version[0m
+firefox 63.0.1
+[34m[1mMongoDB version[0m
+MongoDB 4.0.9
+[34m[1mPhantomJS version[0m
+2.1.1
+[34m[1mPre-installed PostgreSQL versions[0m
+9.4.22
+9.5.17
+9.6.13
+[34m[1mRedis version[0m
+redis-server 5.0.5
+[34m[1mPre-installed Go versions[0m
+1.11.1
+[34m[1mmvn version[0m
+Apache Maven 3.6.0 (97c98ec64a1fdfee7767ce5ffb20918da4f719f3; 2018-10-24T18:41:47Z)
+[34m[1mgradle version[0m
+Gradle 5.1.1!
+[34m[1mlein version[0m
+Leiningen 2.9.1 on Java 11.0.2 OpenJDK 64-Bit Server VM
+[34m[1mPre-installed Node.js versions[0m
+v10.15.3
+v11.0.0
+v4.9.1
+v6.17.1
+v8.12.0
+v8.16.0
+v8.9
+[34m[1mphpenv versions[0m
+  system
+  5.6
+  5.6.40
+  7.1
+  7.1.27
+  7.2
+* 7.2.15 (set by /home/travis/.phpenv/version)
+  hhvm
+  hhvm-stable
+[34m[1mcomposer --version[0m
+Composer version 1.8.4 2019-02-11 10:52:10
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.3.8
+ruby-2.4.5
+ruby-2.5.3
+travis_fold:end:system_info[0K
+travis_time:end:0895591f:start=1593426902911606691,finish=1593426902925121010,duration=13514319,event=show_system_info[0Ktravis_time:start:0060bacb[0Ktravis_time:end:0060bacb:start=1593426902933377157,finish=1593426902962524231,duration=29147074,event=rm_riak_source[0Ktravis_time:start:01f76c6a[0Ktravis_time:end:01f76c6a:start=1593426902970921844,finish=1593426902987139485,duration=16217641,event=fix_rwky_redis[0Ktravis_time:start:11c716cb[0K[31;1mTimeout waiting for network availability.[0m
+travis_time:end:11c716cb:start=1593426902995559375,finish=1593426923846985766,duration=20851426391,event=wait_for_network[0Ktravis_time:start:00329851[0Ktravis_time:end:00329851:start=1593426923854549170,finish=1593426924313476098,duration=458926928,event=update_apt_keys[0Ktravis_time:start:01a8a0a0[0Ktravis_time:end:01a8a0a0:start=1593426924322234426,finish=1593426924468776343,duration=146541917,event=fix_hhvm_source[0Ktravis_time:start:13269779[0Ktravis_time:end:13269779:start=1593426924478733230,finish=1593426924487092479,duration=8359249,event=update_mongo_arch[0Ktravis_time:start:0a3a4518[0Ktravis_time:end:0a3a4518:start=1593426924496006502,finish=1593426924584910579,duration=88904077,event=fix_sudo_enabled_trusty[0Ktravis_time:start:08aaf158[0Ktravis_time:end:08aaf158:start=1593426924596970414,finish=1593426924623637006,duration=26666592,event=clean_up_path[0Ktravis_time:start:04440343[0Ktravis_time:end:04440343:start=1593426924632180222,finish=1593426924657768335,duration=25588113,event=fix_resolv_conf[0Ktravis_time:start:1aa623e8[0Ktravis_time:end:1aa623e8:start=1593426924665551569,finish=1593426924695134548,duration=29582979,event=fix_etc_hosts[0Ktravis_time:start:115a8fe8[0Ktravis_time:end:115a8fe8:start=1593426924703770124,finish=1593426924727420937,duration=23650813,event=fix_mvn_settings_xml[0Ktravis_time:start:07a3f064[0Ktravis_time:end:07a3f064:start=1593426924736528386,finish=1593426924768992386,duration=32464000,event=no_ipv6_localhost[0Ktravis_time:start:004e11a0[0Ktravis_time:end:004e11a0:start=1593426924777100427,finish=1593426924783375185,duration=6274758,event=fix_etc_mavenrc[0Ktravis_time:start:01d854c6[0Ktravis_time:end:01d854c6:start=1593426924791597354,finish=1593426924800915847,duration=9318493,event=fix_wwdr_certificate[0Ktravis_time:start:033aeda0[0Ktravis_time:end:033aeda0:start=1593426924809185142,finish=1593426924878975977,duration=69790835,event=put_localhost_first[0Ktravis_time:start:014af68e[0Ktravis_time:end:014af68e:start=1593426924887706552,finish=1593426924894672351,duration=6965799,event=home_paths[0Ktravis_time:start:06fe4d26[0Ktravis_time:end:06fe4d26:start=1593426924902963200,finish=1593426924937669274,duration=34706074,event=disable_initramfs[0Ktravis_time:start:067ff6cc[0Ktravis_time:end:067ff6cc:start=1593426924946024938,finish=1593426925317686603,duration=371661665,event=disable_ssh_roaming[0Ktravis_time:start:0003bedc[0Ktravis_time:end:0003bedc:start=1593426925326588174,finish=1593426925333749689,duration=7161515,event=debug_tools[0Ktravis_time:start:18344970[0Ktravis_time:end:18344970:start=1593426925342587509,finish=1593426925352217862,duration=9630353,event=uninstall_oclint[0Ktravis_time:start:29b7ca39[0Ktravis_time:end:29b7ca39:start=1593426925361228052,finish=1593426925370994422,duration=9766370,event=rvm_use[0Ktravis_time:start:0033c1cc[0Ktravis_time:end:0033c1cc:start=1593426925379722344,finish=1593426925403079792,duration=23357448,event=rm_etc_boto_cfg[0Ktravis_time:start:1282ff5c[0Ktravis_time:end:1282ff5c:start=1593426925411606993,finish=1593426925418034106,duration=6427113,event=rm_oraclejdk8_symlink[0Ktravis_time:start:0d3c860c[0Ktravis_time:end:0d3c860c:start=1593426925426828363,finish=1593426925623080575,duration=196252212,event=enable_i386[0Ktravis_time:start:020c1240[0Ktravis_time:end:020c1240:start=1593426925631333832,finish=1593426925641268840,duration=9935008,event=update_rubygems[0Ktravis_time:start:1dcffbed[0Ktravis_time:end:1dcffbed:start=1593426925649746804,finish=1593426927625189875,duration=1975443071,event=ensure_path_components[0Ktravis_time:start:09be90b6[0Ktravis_time:end:09be90b6:start=1593426927633820395,finish=1593426927640636790,duration=6816395,event=redefine_curl[0Ktravis_time:start:0013c6b4[0Ktravis_time:end:0013c6b4:start=1593426927648723938,finish=1593426927654965406,duration=6241468,event=nonblock_pipe[0Ktravis_time:start:0bd69720[0Ktravis_time:end:0bd69720:start=1593426927664129495,finish=1593426944568469773,duration=16904340278,event=apt_get_update[0Ktravis_time:start:09f9fcae[0Ktravis_time:end:09f9fcae:start=1593426944577814868,finish=1593426944583627789,duration=5812921,event=deprecate_xcode_64[0Ktravis_time:start:230d7ddc[0Ktravis_time:end:230d7ddc:start=1593426944592637726,finish=1593426954714806835,duration=10122169109,event=update_heroku[0Ktravis_time:start:03e69466[0Ktravis_time:end:03e69466:start=1593426954722365822,finish=1593426954729906504,duration=7540682,event=shell_session_update[0Ktravis_time:start:0a8e0a48[0Ktravis_fold:start:docker_mtu[0Ktee: /etc/docker/daemon.json: No such file or directory
+docker: unrecognized service
+travis_fold:end:docker_mtu[0Ktravis_time:end:0a8e0a48:start=1593426954740328717,finish=1593426954801037772,duration=60709055,event=set_docker_mtu[0Ktravis_time:start:03bbfed4[0Ktravis_time:end:03bbfed4:start=1593426954809992025,finish=1593426954834974994,duration=24982969,event=resolvconf[0Ktravis_time:start:1035159c[0Ktravis_time:end:1035159c:start=1593426954844873015,finish=1593426955086351076,duration=241478061,event=maven_https[0Ktravis_time:start:222bf378[0Ktravis_time:end:222bf378:start=1593426955094785430,finish=1593426955101058760,duration=6273330,event=fix_ps4[0Ktravis_time:start:2cdc1b2a[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:18faf1c4[0K$ git clone --depth=50 --branch='' https://github.com/openSUSE/catatonit.git openSUSE/catatonit
+Cloning into 'openSUSE/catatonit'...
+warning: Could not find remote branch  to clone.
+fatal: Remote branch  not found in upstream origin
+
+[31;1mThe command "eval git clone --depth=50 --branch='' https://github.com/openSUSE/catatonit.git openSUSE/catatonit " failed. Retrying, 2 of 3.[0m
+
+Cloning into 'openSUSE/catatonit'...
+warning: Could not find remote branch  to clone.
+fatal: Remote branch  not found in upstream origin
+
+[31;1mThe command "eval git clone --depth=50 --branch='' https://github.com/openSUSE/catatonit.git openSUSE/catatonit " failed. Retrying, 3 of 3.[0m
+
+Cloning into 'openSUSE/catatonit'...
+warning: Could not find remote branch  to clone.
+fatal: Remote branch  not found in upstream origin
+
+[31;1mThe command "eval git clone --depth=50 --branch='' https://github.com/openSUSE/catatonit.git openSUSE/catatonit " failed 3 times.[0m
+
+travis_time:end:18faf1c4:start=1593426955119474827,finish=1593426960033170891,duration=4913696064,event=checkout[0K$ cd openSUSE/catatonit
+/home/travis/.travis/functions: line 109: cd: openSUSE/catatonit: No such file or directory
+$ git checkout -qf 
+travis_fold:end:git.checkout[0K
+travis_time:end:18faf1c4:start=1593426955119474827,finish=1593426960093916661,duration=4974441834,event=checkout[0Ktravis_time:start:1d2c3d1f[0Ktravis_time:end:1d2c3d1f:start=1593426960102248498,finish=1593426960118345921,duration=16097423,event=env[0K$ export TRAVIS_COMPILER=gcc
+$ export CC=${CC:-gcc}
+$ export CC_FOR_BUILD=${CC_FOR_BUILD:-gcc}
+$ gcc --version
+gcc (Ubuntu 5.4.0-6ubuntu1~16.04.11) 5.4.0 20160609
+Copyright (C) 2015 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+travis_time:start:0206cfa0[0K$ autoreconf -fi && ./configure && make
+libtoolize: putting auxiliary files in '.'.
+libtoolize: copying file './ltmain.sh'
+libtoolize: Consider adding 'AC_CONFIG_MACRO_DIRS([m4])' to configure.ac,
+libtoolize: and rerunning libtoolize and aclocal.
+libtoolize: Consider adding '-I m4' to ACLOCAL_AMFLAGS in Makefile.am.
+configure.ac:22: installing './compile'
+configure.ac:22: installing './config.guess'
+configure.ac:22: installing './config.sub'
+configure.ac:19: installing './install-sh'
+configure.ac:19: installing './missing'
+Makefile.am: installing './depcomp'
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for style of include used by make... GNU
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+checking errno.h usability... yes
+checking errno.h presence... yes
+checking for errno.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking signal.h usability... yes
+checking signal.h presence... yes
+checking for signal.h... yes
+checking stdarg.h usability... yes
+checking stdarg.h presence... yes
+checking for stdarg.h... yes
+checking stdio.h usability... yes
+checking stdio.h presence... yes
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking sys/prctl.h usability... yes
+checking sys/prctl.h presence... yes
+checking for sys/prctl.h... yes
+checking sys/signalfd.h usability... yes
+checking sys/signalfd.h presence... yes
+checking for sys/signalfd.h... yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking sys/wait.h usability... yes
+checking sys/wait.h presence... yes
+checking for sys/wait.h... yes
+checking for pid_t... yes
+checking vfork.h usability... no
+checking vfork.h presence... no
+checking for vfork.h... no
+checking for fork... yes
+checking for vfork... yes
+checking for working fork... yes
+checking for working vfork... (cached) yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+checking dependency style of gcc... (cached) gcc3
+gcc -DPACKAGE_NAME=\"catatonit\" -DPACKAGE_TARNAME=\"catatonit\" -DPACKAGE_VERSION=\"0.1.5+dev\" -DPACKAGE_STRING=\"catatonit\ 0.1.5+dev\" -DPACKAGE_BUGREPORT=\"https://bugs.opensuse.org/\" -DPACKAGE_URL=\"https://github.com/openSUSE/catatonit/\" -DPACKAGE=\"catatonit\" -DVERSION=\"0.1.5+dev\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ERRNO_H=1 -DHAVE_FCNTL_H=1 -DHAVE_SIGNAL_H=1 -DHAVE_STDARG_H=1 -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_UNISTD_H=1 -DHAVE_SYS_PRCTL_H=1 -DHAVE_SYS_SIGNALFD_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_WAIT_H=1 -DHAVE_FORK=1 -DHAVE_VFORK=1 -DHAVE_WORKING_VFORK=1 -DHAVE_WORKING_FORK=1 -I.     -g -O2 -MT catatonit.o -MD -MP -MF .deps/catatonit.Tpo -c -o catatonit.o catatonit.c
+mv -f .deps/catatonit.Tpo .deps/catatonit.Po
+/bin/bash ./libtool  --tag=CC   --mode=link gcc  -g -O2 -all-static  -o catatonit catatonit.o  
+libtool: link: gcc -g -O2 -static -o catatonit catatonit.o 
+travis_time:end:0206cfa0:start=1593426960134850789,finish=1593426974796297080,duration=14661446291,event=script[0K[32;1mThe command "autoreconf -fi && ./configure && make" exited with 0.[0m
+travis_time:start:0128a650[0K$ file ./catatonit | grep 'statically linked'
+./catatonit: ELF 64-bit LSB executable, x86-64, version 1 (GNU/Linux), statically linked, for GNU/Linux 2.6.32, BuildID[sha1]=7745cc7ae3b5d47fce2380a39027745249e2af58, not stripped
+travis_time:end:0128a650:start=1593426974806117563,finish=1593426974819117740,duration=13000177,event=script[0K[32;1mThe command "file ./catatonit | grep 'statically linked'" exited with 0.[0m
+
+
+Done. Your build exited with 0.
