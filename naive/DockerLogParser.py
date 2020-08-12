@@ -85,6 +85,8 @@ def select_highest_opt_level(optmization_operators):
     order = ["-O0", "-O", "-O1", "-O2", "-O3", "-O4", "-O5", "-Os", "-Ofast"]
     highest = 0
     for opt in optmization_operators:
+        if opt not in order:
+            order.append(opt)
         index = order.index(opt)
         if index > highest:
             highest = index
