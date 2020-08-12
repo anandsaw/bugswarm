@@ -69,6 +69,7 @@ def main():
     for root,dirs,files in os.walk(project_base_meta_path):
         for dir in dirs:
             projects.append(os.path.join(root, dir))
+    print("Found %d projects" % len(projects))
     with open("parsed_versions.csv", 'w') as f:
         f.write("project_name,project_path,os_used,dist,gcc_version,gpp_version,clang_version,optimization_level,build_language")
         for project in projects:
