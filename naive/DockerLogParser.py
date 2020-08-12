@@ -73,11 +73,11 @@ def main():
             projects.append(os.path.join(root, dir))
     print("Found %d projects" % len(projects))
     with open("parsed_versions.csv", 'w') as f:
-        f.write("project_name,project_path,os_used,dist,gcc_version,gpp_version,clang_version,optimization_level,build_language")
+        f.write("project_name,project_path,os_used,dist,gcc_version,gpp_version,clang_version,optimization_level,build_language\n")
         for project in projects:
             config = parse_meta_file(project)
             if config is not None:
-                f.write(str(config))
+                f.write(str(config) + "\n")
 
 
 if __name__ == "__main__":
