@@ -127,9 +127,9 @@ def main():
         f.write("project_name,project_path,os_used,dist,gcc_version,gpp_version,clang_version,optimization_level,build_language\n")
         for project in projects:
             config = parse_meta_file(project)
-            if getattr(config, "optimization_level") is "":
-                process_make_file(getattr(config, "project_name"))
             if config is not None:
+                if getattr(config, "optimization_level") is "":
+                    process_make_file(getattr(config, "project_name"))
                 f.write(str(config) + "\n")
 
 
