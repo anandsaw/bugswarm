@@ -134,7 +134,8 @@ def main():
             config = parse_meta_file(project)
             if config is not None:
                 if getattr(config, "optimization_level") is "":
-                    process_make_file(getattr(config, "project_name"))
+                    optimization_level = process_make_file(getattr(config, "project_name"))
+                    setattr(config, "optimization_level", optimization_level)
                 f.write(str(config) + "\n")
             print("Done with %d" % count)
             count += 1
