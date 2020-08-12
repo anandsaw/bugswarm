@@ -73,7 +73,7 @@ def process_make_file(project_name):
     makefiles = []
     for root,dirs,files in os.walk(project_path):
         for file in files:
-            if file.lower().contains("make"):
+            if "make" in file.lower():
                 makefiles.append(os.path.join(root, file))
     optmization_operators = process_make_files(makefiles)
     if len(optmization_operators) > 0:
