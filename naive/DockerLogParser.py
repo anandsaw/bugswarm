@@ -22,6 +22,8 @@ class ProjectConfig(object):
 def parse_meta_file(project_meta_path):
     print("Processing: " + project_meta_path)
     file_path = os.path.join(project_meta_path, "docker-log.txt")
+    if not os.path.exists(file_path):
+        return None
     project_name = project_meta_path.replace("/home/anandsaw/bugswarm/pair-culler/files/", "")
     with open(file_path, 'r') as f:
         lines = f.readlines()
@@ -74,7 +76,8 @@ def main():
         f.write("project_name,project_path,os_used,dist,gcc_version,gpp_version,clang_version,optimization_level,build_language")
         for project in projects:
             config = parse_meta_file(project)
-            f.write(str(config))
+            if config is not None:
+                f.write(str(config))
 
 
 if __name__ == "__main__":
