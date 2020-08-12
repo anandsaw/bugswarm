@@ -1,4 +1,5 @@
 import os
+import re
 
 class ProjectConfig(object):
     def __init__(self, project_name, project_path, os_used="", dist="", gcc_version="", gpp_version="", clang_version="", optimization_level="", build_language=""):
@@ -65,6 +66,56 @@ def parse_meta_file(project_meta_path):
         return ProjectConfig(project_name, file_path, os_used, dist, gcc_version, gpp_version, clang_version, optimization_level, lang)
 
 
+def process_make_file(project_name):
+    project_path = find_project_path(project_name)
+    if project_path == "":
+        return ""
+    makefiles = []
+    for root,dirs,files in os.walk(project_path):
+        for file in files:
+            if file.lower().contains("make"):
+                makefiles.append(os.path.join(root, file))
+    optmization_operators = process_make_files(makefiles)
+    if len(optmization_operators) > 0:
+        return select_highest_opt_level(optmization_operators)
+    return""
+
+
+def select_highest_opt_level(optmization_operators):
+    order = ["-O0", "-O", "-O1", "-O2", "-O3", "-O4", "-O5", "-Os", "-Ofast"]
+    highest = 0
+    for opt in optmization_operators:
+        index = order.index(opt)
+        if index > highest:
+            highest = index
+    return order[highest]
+
+
+def process_make_files(makefiles):
+    optmization = []
+    for makefile in makefiles:
+        with open(makefile, 'r') as f:
+            lines = f.readlines()
+            for line in lines:
+                if not line.startswith("#"):
+                    s = re.findall(r"-O[0-9|fast|s|g]", line)
+                    for opt in s:
+                        optmization.append(opt)
+    return optmization
+
+
+def find_project_path(project_name):
+    if os.path.exists(os.path.join("/hdd8/decom_travis/Repos1_bionic/", project_name)):
+        return os.path.join("/hdd8/decom_travis/Repos1_bionic/", project_name)
+    if os.path.exists(os.path.join("/hdd8/decom_travis/Repos1_xenial/", project_name)):
+        return os.path.join("/hdd8/decom_travis/Repos1_xenial/", project_name)
+    if os.path.exists(os.path.join("/hdd8/decom_travis/Repos1_trusty/", project_name)):
+        return os.path.join("/hdd8/decom_travis/Repos1_trusty/", project_name)
+    if os.path.exists(os.path.join("/hdd8/decom_travis/Repos1_others/", project_name)):
+        return os.path.join("/hdd8/decom_travis/Repos1_others/", project_name)
+    return ""
+
+
 def main():
     project_base_meta_path = "/home/anandsaw/bugswarm/pair-culler/files/"
     projects = []
@@ -76,6 +127,8 @@ def main():
         f.write("project_name,project_path,os_used,dist,gcc_version,gpp_version,clang_version,optimization_level,build_language\n")
         for project in projects:
             config = parse_meta_file(project)
+            if getattr(config, "optimization_level") is "":
+                process_make_file(getattr(config, "project_name"))
             if config is not None:
                 f.write(str(config) + "\n")
 
