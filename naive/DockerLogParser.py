@@ -22,7 +22,7 @@ class ProjectConfig(object):
 def parse_meta_file(project_meta_path):
     print("Processing: " + project_meta_path)
     file_path = os.path.join(project_meta_path, "docker-log.txt")
-    project_name = project_meta_path.replace("/home/anandsaw/bugswarm/pair_culler/files/", "")
+    project_name = project_meta_path.replace("/home/anandsaw/bugswarm/pair-culler/files/", "")
     with open(file_path, 'r') as f:
         lines = f.readlines()
         lang = ""
@@ -64,7 +64,7 @@ def parse_meta_file(project_meta_path):
 
 
 def main():
-    project_base_meta_path = "/home/anandsaw/bugswarm/pair_culler/files/"
+    project_base_meta_path = "/home/anandsaw/bugswarm/pair-culler/files/"
     projects = []
     for root,dirs,files in os.walk(project_base_meta_path):
         for dir in dirs:
