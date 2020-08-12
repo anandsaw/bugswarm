@@ -94,7 +94,7 @@ def select_highest_opt_level(optmization_operators):
 def process_make_files(makefiles):
     optmization = []
     for makefile in makefiles:
-        with open(makefile, 'r') as f:
+        with open(makefile, 'r', errors='ignore') as f:
             lines = f.readlines()
             for line in lines:
                 if not line.startswith("#"):
@@ -125,12 +125,15 @@ def main():
     print("Found %d projects" % len(projects))
     with open("parsed_versions.csv", 'w') as f:
         f.write("project_name,project_path,os_used,dist,gcc_version,gpp_version,clang_version,optimization_level,build_language\n")
+        count = 0
         for project in projects:
             config = parse_meta_file(project)
             if config is not None:
                 if getattr(config, "optimization_level") is "":
                     process_make_file(getattr(config, "project_name"))
                 f.write(str(config) + "\n")
+            print("Done with %d" % count)
+            count += 1
 
 
 if __name__ == "__main__":
